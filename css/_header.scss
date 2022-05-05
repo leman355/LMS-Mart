@@ -1,0 +1,433 @@
+@import "_variable";
+
+.myContainer {
+    width: 80%;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+}
+
+#header {
+    background-color: $white;
+    font-family: Heebo;
+    .bars {
+        display: none;
+        color: $white;
+        font-size: 23px;
+        position: relative;
+        cursor: pointer;
+        .barsF {
+            transition: 0.5s ease-out;
+            opacity: 1;
+            visibility: visible;
+            &.togglebarsF {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        .iks {
+            position: absolute;
+            transition: 0.5s ease-out;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            &.toggleIks {
+                transition: 0.3s ease-out;
+                opacity: 1;
+                visibility: visible;
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .logo {
+        width: 12%;
+        .imageLogo {
+            display: none;
+        }
+    }
+    .bigMenu{
+        .resX {
+            display: none;
+        }
+        width: 40%;
+    .menu {
+        width: 100%;
+        ul {
+            margin-bottom: 0;
+            .resLogo {
+                display: none;
+            }
+            .homeli {
+                padding: 30px 20px;
+                position: relative;
+                a {
+                    padding: 30px 0;
+                    transition: 0.3s ease-in-out;
+                    color: $darkblue;
+                    font-weight: bold;
+                    i {
+                        transition: 0.3s ease-in-out;
+                        margin-left: 10px;
+                        font-size: 12px;
+                        color: $gray;
+                    }
+                    &:hover {
+                        color: $aqua;
+                        i {
+                            color: $aqua;
+                        }
+                    }
+                }
+                &:hover {
+                    .home {
+                        transform: translateY(20px);
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+                .home {
+                    transition: 0.5s ease-in-out;
+                    position: absolute;
+                    transform: translateY(30px);
+                    background-color: $white;
+                    width: 270px;
+                    padding: 20px 0px;
+                    border-radius: 2mm;
+                    border-top: 3px solid $aqua;
+                    opacity: 0;
+                    visibility: hidden;
+                    &.lastHome {
+                        right: 0%;
+                    }
+                    li{
+                        padding: 10px 30px;
+                        a {
+                            padding: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+                    }
+                    .courseGrid {
+                        position: relative;
+                        &:hover {
+                            .course {
+                                opacity: 1;
+                                visibility: visible;
+                                transform: translateY(0px);
+                                top: -50%;
+                            }
+                        }
+                        .course {
+                            transition: 0.5s ease-in-out;
+                            position: absolute;
+                            top: 0%;
+                            transform: translateY(30px);
+                            background-color: $white;
+                            width: 270px;
+                            padding: 20px 25px;
+                            border-radius: 2mm;
+                            border-top: 3px solid $aqua;
+                            opacity: 0;
+                            visibility: hidden;
+                            &.firstcourse {
+                                left: 100%;
+                            }
+                            &.lastcourse {
+                                right: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    .right {
+        input {
+            &::placeholder {
+                color: $darkblue;
+            }
+            border: none;
+            padding: 12px 20px;
+            border-radius: 1mm 0 0 1mm;
+            background-color: $lightgray;
+            outline: none;
+            caret-color: $darkblue;
+        }
+        .search {
+            color: $aqua;
+            background-color: $lightgray;
+            border-radius: 0 1mm 1mm 0;
+            font-size: 16px;
+            padding: 16px;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                color: $darkblue;
+            }
+        }
+        i {
+            color: $darkblue;
+            padding: 16px 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .user {
+            border-left: 1px solid $lightgray;
+            padding-right: 5px;
+        }
+        p {
+            margin: 0;
+            span {
+                font-size: 15px;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                    color: $aqua;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .myContainer {
+        width: 85%;
+    }
+    #header {
+        background-color: $darkblue;
+        position: relative;
+        .bars {
+            display: block;
+        }
+        .logo {
+            padding: 10px;
+            width: 40%;
+            .logoImage {
+                display: none;
+            }
+            .imageLogo {
+                display: block;
+            }
+        }
+        .bigMenu {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            opacity: 0;
+            visibility: hidden;
+            width: 350px;
+            height: 100vh;
+            // overflow: hidden;
+            transition: 0.8s ease-in;
+            .resX {
+                display: block;
+                position: absolute;
+                top: 0%;
+                left: 100%;
+                font-size: 20px;
+                background-color: $aqua;
+                color: $white;
+                padding: 7px 15px;
+                margin: 30px 0 0 5px;
+                border-radius: 2mm;
+                &.resXAnim {
+                    transition: 0.5s ease-out;
+                    transform: rotate(180deg);
+                }
+            }
+            &.navActive {
+                // z-index: 1;
+                opacity: 1;
+                visibility: visible;
+                left: 0%;
+            }
+            .menu {
+                z-index: 100;
+                // position: fixed;
+                top: 0%;
+                left: -100%;
+                transition: 0.8s ease-in;
+                z-index: 100;
+                height: 100vh;
+                width: 350px;
+                background-color: $bluegray;
+                // opacity: 0;
+                // visibility: hidden;
+                overflow: scroll;
+                &.menuActive {
+                    // opacity: 1;
+                    // visibility: visible;
+                    left: 0%;
+                }
+                ul {
+                    overflow: hidden;
+                    padding-top: 30px;
+                    text-align: center;
+                    display: block !important;
+                    z-index: -1;
+                    .resLogo {
+                        margin: 0 0 25px 30px;
+                        width: 40%;
+                        display: block;
+                    }
+                    .homeli {
+                        padding: 0px 0 0 30px;
+                        // overflow: hidden;
+                        position: sticky;
+                        a {
+                            padding: 2px;
+                            font-size: 14px;
+                            color: $white;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 100%;
+                            i {
+                                font-size: 15px;
+                                transform: rotate(270deg);
+                                margin-right: 20px;
+                                padding: 10px 12px;
+                                background-color: $bluegray2;
+                                transition: 0.3s ease;
+                                &.itransform {
+                                    transform: rotate(360deg);
+                                }
+                            }
+                            &:hover {
+                                color: $white;
+                                i {
+                                    color: $white;
+                                }
+                            }
+                            .angleDown {
+                                display: none;
+                            }
+                        }
+                        &:hover {
+                            .home {
+                                transform: translateY(-10px);
+                                opacity: 0;
+                                visibility: hidden;
+                            }
+                        }
+                        .home {
+                            top: 0;
+                            background-color: $bluegray;
+                            border-top: none;
+                            transform: translateY(-10px);
+                            border-radius: 5px;
+                            // overflow: hidden;
+                            width: 340px;
+                            padding: 0;
+                            display: none;
+                            &.relHome {
+                                position: relative;
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                            .courseGrid {
+                                a {
+                                    i {
+                                        transition: 0.3s ease-in;
+                                        transform: rotate(0deg);
+                                        &.courseI {
+                                            transform: rotate(90deg);
+                                        }
+                                    }
+                                }
+                                &:hover {
+                                    .course {
+                                        opacity: 0;
+                                        visibility: hidden;
+                                        top: 0;
+                                        &.lastcourse {
+                                            left: 0%;
+                                        }
+                                    }
+                                }
+                                .course {
+                                    padding: 0;
+                                    position: absolute;
+                                    background-color: $bluegray;
+                                    top: 100%;
+                                    border-top: none;
+                                    transform: translateY(0);
+                                    border-radius: 5px;
+                                    // display: none;
+                                    &.firstcourse {
+                                        left: 0;
+                                    }
+                                    &.lastcourse {
+                                        left: 0%;
+                                    }
+                                    &.relCourse {
+                                        position: relative;
+                                        z-index: 3;
+                                        opacity: 1;
+                                        visibility: visible;
+                                    }
+                                }
+                            }
+                            li {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right {
+            input {
+                display: none;
+            }
+            .search {
+                display: block;
+                background-color: $darkblue;
+                color: $white;
+            }
+            i {
+                display: none;
+            }
+            p {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 400px) {
+    #header {
+        .bigMenu {
+            width: 80%;
+            .menu {
+            width: 100%;
+                ul {
+                    .homeli {
+                        .home {
+                            width: 220px;
+                            li {
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    #header {
+        .logo {
+            width: 30%;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    #header {
+        .logo {
+            width: 20%;
+        }
+    }
+}

@@ -1,0 +1,159 @@
+@import "_variable";
+
+a {
+    text-decoration: none;
+    font-family: Heebo;
+}
+
+#footer {
+    padding-top: 3rem;
+    background-color: $lightgray;
+    font-family: Heebo;
+    .footBox {
+        width: 90%;
+        margin: auto;
+        padding: 20px 0;
+        .boxLeft {
+            width: 20%;
+            img {
+                width: 150px;
+                margin-bottom: 20px;
+            }
+            span {
+                color: $textcolor;
+                line-height: 28px;
+            }
+            .icons {
+                margin-top: 20px;
+                i {
+                    padding: 8px;
+                    border-radius: 20px;
+                    border: 1px solid $aqua;
+                    color: $aqua;
+                    font-size: 18px;
+                    margin-right: 8px;
+                    transition: 0.4s;
+                    &:hover {
+                        background-color: $aqua;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .boxMid {
+            ul {
+                li {
+                    a {
+                        padding: 5px 0;
+                        display: block;
+                        transition: 0.3s;
+                        color: $textcolor;
+                        h5 {
+                            color: $darkblue;
+                            margin-bottom: 20px;
+                            font-weight: bolder;
+                        }
+                        &:hover {
+                            color: $aqua;
+                        }
+                    }
+                }
+            }
+        }
+        .boxRight{
+            width: 25%;
+            h5{
+                color: $darkblue;
+                margin-bottom: 20px;
+                font-family: Heebo;
+                font-weight: bolder;
+
+            }
+            a{
+                display: block;
+                color:$textcolor;
+                padding: 9px 0;
+                line-height: 28px;
+                i{
+                    color: $aqua;
+                    margin-right: 5px;
+                    font-size: 19px;
+                }
+            }
+
+        }
+        .botFoot{
+            width: 100%;
+            border-top: 1px solid rgba(150, 150, 150, 0.187);
+            padding-top: 20px;
+            .copyright{
+                width: 30%;
+                margin: auto;
+                text-align: center;
+                p{
+                    color: $textcolor;
+                }
+            }
+        }
+    }
+}
+
+
+// responsive
+
+@media (max-width: 768px) {
+    #footer{
+        .footBox{
+            padding: 3rem;
+            .boxLeft{
+                width: 90%;
+                margin-bottom: 2rem;
+    
+            }
+            .boxMid{
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+            .boxRight{
+                width: 100%;
+            }
+            .botFoot{
+                margin-top: 20px;
+                .copyright{
+                    width: 100%;
+                }
+            }
+
+        }
+       
+
+    }
+
+}
+
+@media (min-width: 768px) and (max-width:992px){
+    #footer{
+        .footBox{
+            padding:  2rem;
+            .boxLeft{
+                width: 45%;
+                margin-bottom: 35px;
+            }
+            .boxMid{
+                width: 45%;
+
+            }
+            .boxRight{
+                width: 45%;
+                margin-top: 10px;
+            }
+            .botFoot{
+                margin-top: 20px;
+                .copyright{
+                    width: 80%;
+                }
+            }
+        }
+
+    }
+}
