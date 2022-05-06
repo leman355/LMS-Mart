@@ -1,0 +1,212 @@
+@import "_variable";
+
+.sidebar {
+    font-family: Heebo;
+    background-image: url(https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2021/12/REJ93.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // height: 325px;
+    text-align: center;
+    .filterContainer {
+        padding: 110px 0;
+        h1 {
+            font-weight: bold;
+            color: $blue;
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+        p {
+            color: $gray;
+            span {
+                &:last-child {
+                    color: $aqua;
+                }
+                &:hover {
+                    color: $aqua;
+                }
+            }
+        }
+    }
+}
+.filterLeft {
+    font-family: Heebo;
+    margin-top: 100px;
+    .filterIntroduction {
+        h5 {
+            color: $darkblue;
+            margin-bottom: 12px;
+            font-weight: bold;
+            font-size: 17px;
+        }
+        ul {
+            li {
+                color: $gray;
+                padding: 8px 0;
+                &:hover {
+                    h6 {
+                        color: $aqua;
+                    }
+                }
+                p {
+                    color: $gray;
+                    font-size: 11px;
+                    transition: 0.3s ease-in-out;
+                    margin: 0;
+                    padding: 0px 4px;
+                    border: 1px solid $gray;
+                    transition: 0.3s ease;
+                    &.toggleP {
+                        background-color: $aqua;
+                    }
+                    i {
+                        font-size: 10px;
+                        color: $white;
+                    }
+                }
+                h6 {
+                    margin: 0 0 0 10px;
+                    font-size: 15px;
+                    transition: 0.3s ease-in;
+                    cursor: pointer;
+                }
+            }
+        }
+        .filterbyCategory {
+            border: 1px solid $lightgray;
+            padding: 20px 20px 0 20px;
+            height: 350px;
+            overflow: auto;
+        }
+        .instructor {
+            margin-top: 20px;
+            border: 1px solid $lightgray;
+            padding: 20px 20px 0 20px;
+        }
+    }
+    .showing {
+        width: 95%;
+        margin: auto;
+        .topShow {
+            border: 2px solid $lightgray;
+            padding: 10px;
+            i {
+                color: $gray;
+                padding: 5px;
+            }
+            span {
+                font-size: 14px;
+                color: $gray;
+            }
+            select {
+                color: $gray;
+                background-color: $lightgray;
+                font-size: 13px;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding: 5px 0 5px 10px;
+
+                border: none;
+            }
+            .search {
+                color: $gray;
+                position: relative;
+                i {
+                    position: absolute;
+                    right: 10%;
+                    display: inline-block;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                input {
+                    font-size: 15px;
+                    width: 95%;
+                    border: none;
+                    padding: 5px 10px;
+                    background-color: $lightgray;
+                }
+            }
+        }
+        // topShow end
+        .cookingCourseBoxes {
+            padding: 50px 0;
+            .cookingCourse {
+                padding: 30px 0;
+                border-bottom: 1px solid $lightgray;
+                img {
+                    height: 200px;
+                    object-fit: cover;
+                    border-radius: 5px;
+                    overflow: hidden;
+                }
+                .health {
+                    .cook {
+                        color: $aqua;
+                        background-color: $oaqua;
+                        border-radius: 1mm;
+                        font-size: 13px;
+                        padding: 3px 12px;
+                        font-weight: bold;
+                    }
+                }
+                p {
+                    color: $darkblue;
+                    font-weight: bold;
+                    margin: 0;
+                }
+                h4 {
+                    color: $blue;
+                    font-weight: bold;
+                    margin: 20px 0 15px 0;
+                    font-size: 20px;
+                }
+                i {
+                    color: $aqua;
+                }
+                span {
+                    color: $gray;
+                    font-size: 14px;
+                    padding: 5px 15px 5px 3px;
+                }
+                .star {
+                    padding: 0;
+                    i {
+                        color: $yellow;
+                        &.far {
+                            background-image: linear-gradient(90deg, $yellow 50%, $gray 50%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+                }
+                .five {
+                    padding: 0;
+                }
+                .tutorial {
+                    color: $gray;
+                    margin-top: 15px;
+                    font-weight: 500;
+                }
+            }
+            .numbers{
+                text-align: center;
+                margin-top: 20px;
+                span{
+                    color: $gray;
+                    font-weight: bold;
+                    padding: 4px 11px;
+                    border-radius: 10mm;
+                    font-size: 14px;
+                    &:first-child{
+                        color: $white;
+                        background-color: $aqua;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.zzz {
+    margin-top: 200px;
+}

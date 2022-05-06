@@ -47,29 +47,44 @@ for (let i = 0; i < courseGridA.length; i++) {
 
 let videoBox = document.querySelector(".why .videoBox")
 let play = document.querySelectorAll('.why .this .discuss i')
-let close = document.querySelector(".why .videoBox i")
+let closeBox = document.querySelector(".why .videoBox i")
 
 
 for (let i = 0; i < play.length; i++) {
     play[i].addEventListener("click", function () {
         videoBox.classList.add("activeVideo")
     })
+    closeBox.addEventListener("click", function () {
+        videoBox.classList.remove("activeVideo")
+    })
 }
-close.addEventListener("click", function () {
-    videoBox.classList.remove("activeVideo")
-})
 
 let arrUp=document.querySelector('.arrUp')
  
-window.onscroll = function () {
-    if (window.scrollY > 700) {
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
         arrUp.classList.add("arrUpactive")
-    }
-    else {
-        arrUp.classList.remove("arrUpactive")
-    }
+  } else {
+    arrUp.classList.remove("arrUpactive")
+  }
 }
 
-arrUp.addEventListener("click", function(){
-    body.animate({ scrollTop: 0 }, "slow");
-})
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+let filterLeftLi = document.querySelectorAll(
+  ".filterLeft ul li"
+);
+let filterLeftP = document.querySelectorAll(
+  ".filterLeft ul li p"
+);
+
+for (let i = 0; i < filterLeftLi.length; i++) {
+  filterLeftLi[i].addEventListener("click", function () {
+    filterLeftP[i].classList.toggle("toggleP");
+  });
+}

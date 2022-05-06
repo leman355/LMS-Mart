@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 .myContainer {
   width: 80%;
   margin: auto;
@@ -1777,5 +1778,248 @@ a {
   #footer .footBox .botFoot .copyright {
     width: 80%;
   }
+}
+
+.sidebar {
+  font-family: Heebo;
+  background-image: url(https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2021/12/REJ93.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.sidebar .filterContainer {
+  padding: 110px 0;
+}
+
+.sidebar .filterContainer h1 {
+  font-weight: bold;
+  color: #072F60;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.sidebar .filterContainer p {
+  color: #6E6F6F;
+}
+
+.sidebar .filterContainer p span:last-child {
+  color: #3BBCA7;
+}
+
+.sidebar .filterContainer p span:hover {
+  color: #3BBCA7;
+}
+
+.filterLeft {
+  font-family: Heebo;
+  margin-top: 100px;
+}
+
+.filterLeft .filterIntroduction h5 {
+  color: #141948;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.filterLeft .filterIntroduction ul li {
+  color: #6E6F6F;
+  padding: 8px 0;
+}
+
+.filterLeft .filterIntroduction ul li:hover h6 {
+  color: #3BBCA7;
+}
+
+.filterLeft .filterIntroduction ul li p {
+  color: #6E6F6F;
+  font-size: 11px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  margin: 0;
+  padding: 0px 4px;
+  border: 1px solid #6E6F6F;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.filterLeft .filterIntroduction ul li p.toggleP {
+  background-color: #3BBCA7;
+}
+
+.filterLeft .filterIntroduction ul li p i {
+  font-size: 10px;
+  color: white;
+}
+
+.filterLeft .filterIntroduction ul li h6 {
+  margin: 0 0 0 10px;
+  font-size: 15px;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.filterLeft .filterIntroduction .filterbyCategory {
+  border: 1px solid #f6f7f9;
+  padding: 20px 20px 0 20px;
+  height: 350px;
+  overflow: auto;
+}
+
+.filterLeft .filterIntroduction .instructor {
+  margin-top: 20px;
+  border: 1px solid #f6f7f9;
+  padding: 20px 20px 0 20px;
+}
+
+.filterLeft .showing {
+  width: 95%;
+  margin: auto;
+}
+
+.filterLeft .showing .topShow {
+  border: 2px solid #f6f7f9;
+  padding: 10px;
+}
+
+.filterLeft .showing .topShow i {
+  color: #6E6F6F;
+  padding: 5px;
+}
+
+.filterLeft .showing .topShow span {
+  font-size: 14px;
+  color: #6E6F6F;
+}
+
+.filterLeft .showing .topShow select {
+  color: #6E6F6F;
+  background-color: #f6f7f9;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 0 5px 10px;
+  border: none;
+}
+
+.filterLeft .showing .topShow .search {
+  color: #6E6F6F;
+  position: relative;
+}
+
+.filterLeft .showing .topShow .search i {
+  position: absolute;
+  right: 10%;
+  display: inline-block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.filterLeft .showing .topShow .search input {
+  font-size: 15px;
+  width: 95%;
+  border: none;
+  padding: 5px 10px;
+  background-color: #f6f7f9;
+}
+
+.filterLeft .showing .cookingCourseBoxes {
+  padding: 50px 0;
+}
+
+.filterLeft .showing .cookingCourseBoxes .cookingCourse {
+  padding: 30px 0;
+  border-bottom: 1px solid #f6f7f9;
+}
+
+.filterLeft .showing .cookingCourseBoxes .cookingCourse img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.filterLeft .showing .cookingCourseBoxes .cookingCourse .health .cook {
+  color: #3BBCA7;
+  background-color: #b6e5de56;
+  border-radius: 1mm;
+  font-size: 13px;
+  padding: 3px 12px;
+  font-weight: bold;
+}
+
+.filterLeft .showing .cookingCourseBoxes .cookingCourse p {
+  color: #141948;
+  font-weight: bold;
+  margin: 0;
+}
+
+.filterLeft .showing .cookingCourseBoxes .cookingCourse h4 {
+  color: #072F60;
+  font-weight: bold;
+  margin: 20px 0 15px 0;
+  font-size: 20px;
+}
+
+.filterLeft .showing .cookingCourseBoxes .cookingCourse i {
+  color: #3BBCA7;
+}
+
+.filterLeft .showing .cookingCourseBoxes .cookingCourse span {
+  color: #6E6F6F;
+  font-size: 14px;
+  padding: 5px 15px 5px 3px;
+}
+
+.filterLeft .showing .cookingCourseBoxes .cookingCourse .star {
+  padding: 0;
+}
+
+.filterLeft .showing .cookingCourseBoxes .cookingCourse .star i {
+  color: #ffd24d;
+}
+
+.filterLeft .showing .cookingCourseBoxes .cookingCourse .star i.far {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #ffd24d), color-stop(50%, #6E6F6F));
+  background-image: linear-gradient(90deg, #ffd24d 50%, #6E6F6F 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.filterLeft .showing .cookingCourseBoxes .cookingCourse .five {
+  padding: 0;
+}
+
+.filterLeft .showing .cookingCourseBoxes .cookingCourse .tutorial {
+  color: #6E6F6F;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.filterLeft .showing .cookingCourseBoxes .numbers {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.filterLeft .showing .cookingCourseBoxes .numbers span {
+  color: #6E6F6F;
+  font-weight: bold;
+  padding: 4px 11px;
+  border-radius: 10mm;
+  font-size: 14px;
+}
+
+.filterLeft .showing .cookingCourseBoxes .numbers span:first-child {
+  color: white;
+  background-color: #3BBCA7;
+}
+
+.zzz {
+  margin-top: 200px;
 }
 /*# sourceMappingURL=style.css.map */
