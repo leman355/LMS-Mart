@@ -9,8 +9,15 @@ a {
 }
 
 #header {
+    z-index: 100;
     background-color: $white;
     font-family: Heebo;
+    &.fixedToTop{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
     .bars {
         display: none;
         color: $white;
