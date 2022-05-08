@@ -1,0 +1,161 @@
+@import "_variable";
+
+// section marketing start
+.marketing {
+    font-family: Heebo;
+    overflow: hidden;
+    .leftBox {
+        position: fixed;
+        width: 30%;
+        top: 0;
+        left: 0;
+        .search {
+            color: $gray;
+            position: relative;
+            margin-bottom: 40px;
+            i {
+                position: absolute;
+                right: 3%;
+                display: inline-block;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 17px;
+            }
+            input {
+                font-size: 15px;
+                width: 100%;
+                border: none;
+                padding: 20px 10px;
+                background-color: $lightgray;
+                outline: none;
+            }
+        }
+        .marketingLeft {
+            .accordionmenu {
+                width: 100%;
+                height: 87vh;
+                overflow: auto;
+                .introduction {
+                    padding: 0 20px;
+                    margin: 35px 0 25px 0;
+                    &.activeInt {
+                        i {
+                            transform: rotate(180deg);
+                        }
+                    }
+                    h5 {
+                        color: $darkblue;
+                        font-weight: bold;
+                    }
+                    i {
+                        transition: 0.3s ease;
+                        color: $gray;
+                    }
+                }
+                ul {
+                    display: none;
+                    &.ulActive {
+                        display: block;
+                    }
+                    li {
+                        background-color: $white;
+                        padding: 10px 25px;
+                        &:nth-child(odd) {
+                            background-color: $lightgray;
+                        }
+                        &:hover {
+                            a {
+                                span {
+                                    color: $aqua;
+                                }
+                            }
+                        }
+                        a {
+                            color: $gray;
+                            i {
+                                border: 1px solid;
+                                border-radius: 10mm;
+                                padding: 2px 3px;
+                                font-size: 8px;
+                                margin-right: 15px;
+                            }
+                            span {
+                                color: $textcolor;
+                                font-weight: bold;
+                                font-size: 14px;
+                                transition: 0.3s ease-in-out;
+                            }
+                            p {
+                                margin: 3px 0 0 34px;
+                                font-size: 13px;
+                            }
+                            .lock {
+                                font-size: 13px;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rightBox {
+        width: 70%;
+        position: fixed;
+        top: 10%;
+        right: 0;
+        .topRight {
+            width: 70%;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: $darkblue;
+            padding: 10px;
+            color: $white;
+            .ttopR {
+                width: 70%;
+                margin: auto;
+            }
+            h5 {
+                font-size: 19px;
+                transition: 0.4s ease;
+                cursor: pointer;
+                &:hover {
+                    color: $aqua;
+                }
+            }
+            p {
+                margin: 0 5px 0 0;
+            }
+            hr {
+                width: 80px;
+                height: 5px;
+                border-radius: 5mm;
+            }
+            .iksMark {
+                background-color: $bluegray2;
+                padding: 20px 22px;
+            }
+        }
+        .courseOverwiew {
+            overflow-y: scroll;
+            h2 {
+                color: $darkblue;
+                font-weight: bold;
+                margin: 20px 0;
+            }
+            p {
+                margin: 20px 0 50px 0;
+                color: $gray;
+            }
+            .next {
+                color: $gray;
+                text-align: right;
+                i {
+                    margin-left: 5px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

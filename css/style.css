@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 .myContainer {
   width: 80%;
   margin: auto;
@@ -1940,6 +1941,7 @@ a {
   border: none;
   padding: 5px 10px;
   background-color: #f6f7f9;
+  outline: none;
 }
 
 .filterLeft .showing .cookingCourseBoxes {
@@ -2201,5 +2203,193 @@ a {
   .filterLeft .showing .cookingCourseBoxes .star i {
     font-size: 9px;
   }
+}
+
+.marketing {
+  font-family: Heebo;
+  overflow: hidden;
+}
+
+.marketing .leftBox {
+  position: fixed;
+  width: 30%;
+  top: 0;
+  left: 0;
+}
+
+.marketing .leftBox .search {
+  color: #6E6F6F;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.marketing .leftBox .search i {
+  position: absolute;
+  right: 3%;
+  display: inline-block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 17px;
+}
+
+.marketing .leftBox .search input {
+  font-size: 15px;
+  width: 100%;
+  border: none;
+  padding: 20px 10px;
+  background-color: #f6f7f9;
+  outline: none;
+}
+
+.marketing .leftBox .marketingLeft .accordionmenu {
+  width: 100%;
+  height: 87vh;
+  overflow: auto;
+}
+
+.marketing .leftBox .marketingLeft .accordionmenu .introduction {
+  padding: 0 20px;
+  margin: 35px 0 25px 0;
+}
+
+.marketing .leftBox .marketingLeft .accordionmenu .introduction.activeInt i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.marketing .leftBox .marketingLeft .accordionmenu .introduction h5 {
+  color: #141948;
+  font-weight: bold;
+}
+
+.marketing .leftBox .marketingLeft .accordionmenu .introduction i {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #6E6F6F;
+}
+
+.marketing .leftBox .marketingLeft .accordionmenu ul {
+  display: none;
+}
+
+.marketing .leftBox .marketingLeft .accordionmenu ul.ulActive {
+  display: block;
+}
+
+.marketing .leftBox .marketingLeft .accordionmenu ul li {
+  background-color: white;
+  padding: 10px 25px;
+}
+
+.marketing .leftBox .marketingLeft .accordionmenu ul li:nth-child(odd) {
+  background-color: #f6f7f9;
+}
+
+.marketing .leftBox .marketingLeft .accordionmenu ul li:hover a span {
+  color: #3BBCA7;
+}
+
+.marketing .leftBox .marketingLeft .accordionmenu ul li a {
+  color: #6E6F6F;
+}
+
+.marketing .leftBox .marketingLeft .accordionmenu ul li a i {
+  border: 1px solid;
+  border-radius: 10mm;
+  padding: 2px 3px;
+  font-size: 8px;
+  margin-right: 15px;
+}
+
+.marketing .leftBox .marketingLeft .accordionmenu ul li a span {
+  color: #666666;
+  font-weight: bold;
+  font-size: 14px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.marketing .leftBox .marketingLeft .accordionmenu ul li a p {
+  margin: 3px 0 0 34px;
+  font-size: 13px;
+}
+
+.marketing .leftBox .marketingLeft .accordionmenu ul li a .lock {
+  font-size: 13px;
+  border: none;
+}
+
+.marketing .rightBox {
+  width: 70%;
+  position: fixed;
+  top: 10%;
+  right: 0;
+}
+
+.marketing .rightBox .topRight {
+  width: 70%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #141948;
+  padding: 10px;
+  color: white;
+}
+
+.marketing .rightBox .topRight .ttopR {
+  width: 70%;
+  margin: auto;
+}
+
+.marketing .rightBox .topRight h5 {
+  font-size: 19px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.marketing .rightBox .topRight h5:hover {
+  color: #3BBCA7;
+}
+
+.marketing .rightBox .topRight p {
+  margin: 0 5px 0 0;
+}
+
+.marketing .rightBox .topRight hr {
+  width: 80px;
+  height: 5px;
+  border-radius: 5mm;
+}
+
+.marketing .rightBox .topRight .iksMark {
+  background-color: #243052;
+  padding: 20px 22px;
+}
+
+.marketing .rightBox .courseOverwiew {
+  overflow-y: scroll;
+}
+
+.marketing .rightBox .courseOverwiew h2 {
+  color: #141948;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.marketing .rightBox .courseOverwiew p {
+  margin: 20px 0 50px 0;
+  color: #6E6F6F;
+}
+
+.marketing .rightBox .courseOverwiew .next {
+  color: #6E6F6F;
+  text-align: right;
+}
+
+.marketing .rightBox .courseOverwiew .next i {
+  margin-left: 5px;
+  font-size: 13px;
 }
 /*# sourceMappingURL=style.css.map */
