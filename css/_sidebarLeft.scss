@@ -1,5 +1,7 @@
 @import "_variable";
 
+
+// section sidebar start
 .sidebar {
     font-family: Heebo;
     background-image: url(https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2021/12/REJ93.jpeg);
@@ -29,6 +31,9 @@
         }
     }
 }
+// section sidebar end
+// -------------------
+// section filterLeft start
 .filterLeft {
     font-family: Heebo;
     margin-top: 100px;
@@ -93,6 +98,11 @@
             i {
                 color: $gray;
                 padding: 5px;
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+                &.activeI {
+                    color: $aqua;
+                }
             }
             span {
                 font-size: 14px;
@@ -129,77 +139,266 @@
         }
         // topShow end
         .cookingCourseBoxes {
-            padding: 50px 0;
+            padding: 20px 0 50px 0;
+            display: none;
+            &.activeCook {
+                display: block;
+            }
             .cookingCourse {
                 padding: 30px 0;
                 border-bottom: 1px solid $lightgray;
-                img {
-                    height: 200px;
-                    object-fit: cover;
-                    border-radius: 5px;
-                    overflow: hidden;
+            }
+            .bigCook {
+                padding: 30px 0;
+            }
+            img {
+                height: 200px;
+                object-fit: cover;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+            .cook {
+                color: $aqua;
+                background-color: $oaqua;
+                border-radius: 1mm;
+                font-size: 13px;
+                padding: 3px 12px;
+                font-weight: bold;
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+                &:hover {
+                    background-color: $aqua;
+                    color: $white;
                 }
-                .health {
-                    .cook {
-                        color: $aqua;
-                        background-color: $oaqua;
-                        border-radius: 1mm;
-                        font-size: 13px;
-                        padding: 3px 12px;
-                        font-weight: bold;
+            }
+            p {
+                color: $darkblue;
+                font-weight: bold;
+                margin: 0;
+            }
+            h4 {
+                color: $blue;
+                font-weight: bold;
+                margin: 20px 0 15px 0;
+                font-size: 20px;
+            }
+            i {
+                color: $aqua;
+            }
+            span {
+                color: $gray;
+                font-size: 14px;
+                padding: 5px 15px 5px 3px;
+            }
+            .star {
+                padding: 0;
+                i {
+                    font-size: 13px;
+                    color: $yellow;
+                    &.far {
+                        background-image: linear-gradient(90deg, $yellow 50%, $gray 50%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
                     }
                 }
-                p {
-                    color: $darkblue;
-                    font-weight: bold;
-                    margin: 0;
-                }
-                h4 {
-                    color: $blue;
-                    font-weight: bold;
-                    margin: 20px 0 15px 0;
-                    font-size: 20px;
-                }
-                i {
-                    color: $aqua;
-                }
-                span {
-                    color: $gray;
-                    font-size: 14px;
-                    padding: 5px 15px 5px 3px;
-                }
-                .star {
-                    padding: 0;
-                    i {
-                        color: $yellow;
-                        &.far {
-                            background-image: linear-gradient(90deg, $yellow 50%, $gray 50%);
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
+            }
+            .five {
+                padding: 0;
+            }
+            .tutorial {
+                color: $gray;
+                margin-top: 15px;
+                font-weight: 500;
+            }
+            .analyst {
+                box-shadow: 0 0 20px 0 $lightgray;
+                margin: 10px 0;
+                border-radius: 5px;
+                &:hover {
+                    .imgBox {
+                        &::before {
+                            opacity: 1;
                         }
                     }
                 }
-                .five {
-                    padding: 0;
+                .imgBox {
+                    position: relative;
+                    img {
+                        height: auto;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.295);
+                        transition: 0.3s ease-in;
+                        opacity: 0;
+                    }
                 }
-                .tutorial {
-                    color: $gray;
-                    margin-top: 15px;
-                    font-weight: 500;
+                .smallImg {
+                    width: 35px;
+                    height: 35px;
+                    object-fit: cover;
+                    border-radius: 10mm;
+                }
+                .tim {
+                    font-size: 16px;
+                }
+                .intelligence {
+                    padding: 20px 18px 5px 18px;
+                    h4 {
+                        font-size: 18px;
+                    }
+                }
+                .secondintelligence {
+                    padding: 0 18px 10px 18px;
                 }
             }
-            .numbers{
+            .numbers {
                 text-align: center;
                 margin-top: 20px;
-                span{
+                span {
                     color: $gray;
                     font-weight: bold;
                     padding: 4px 11px;
                     border-radius: 10mm;
                     font-size: 14px;
-                    &:first-child{
+                    &:first-child {
                         color: $white;
                         background-color: $aqua;
+                    }
+                }
+            }
+        }
+    }
+}
+// section filterLeft end
+
+
+
+
+// responsive
+
+@media (max-width: 576px) {
+    .sidebar {
+        .filterContainer {
+            padding: 60px 0;
+            h1 {
+                font-size: 32px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .filterLeft {
+        .showing {
+            margin: 35px auto;
+            .topShow {
+                select {
+                    margin-top: 20px;
+                    width: 100%;
+                }
+                .search {
+                    margin-top: 20px;
+                    input {
+                        width: 100%;
+                    }
+                    i {
+                        right: 3%;
+                    }
+                }
+            }
+            .cookingCourseBoxes {
+                .cookingCourse {
+                    text-align: center;
+                    padding: 25px;
+                    .health {
+                        margin-top: 20px;
+                    }
+                    .free {
+                        margin-top: 20px;
+                    }
+                }
+                .bigCook {
+                    .analyst {
+                        margin: 20px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    .sidebar {
+        .filterContainer {
+            padding: 60px 0;
+            h1 {
+                font-size: 32px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .filterLeft {
+        img {
+            width: 100%;
+        }
+        .filterIntroduction {
+            .filterbyCategory {
+                min-width: 135px;
+            }
+            .instructor {
+                min-width: 135px;
+            }
+        }
+        .showing {
+            margin: 35px auto;
+            .topShow {
+                select {
+                    margin-top: 20px;
+                    width: 100%;
+                }
+                .search {
+                    margin-top: 20px;
+                    input {
+                        width: 100%;
+                    }
+                    i {
+                        right: 3%;
+                    }
+                }
+            }
+            .cookingCourseBoxes {
+                .cookingCourse {
+                    // text-align: center;
+                    padding: 25px;
+                    .health {
+                        margin-top: 20px;
+                    }
+                    .free {
+                        margin-top: 20px;
+                    }
+                    .star {
+                        display: block;
+                    }
+                }
+                .bigCook {
+                    .analyst {
+                        margin: 20px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .filterLeft {
+        .showing {
+            .cookingCourseBoxes {
+                .star {
+                    i {
+                        font-size: 9px;
                     }
                 }
             }
