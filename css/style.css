@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 .myContainer {
   width: 80%;
   margin: auto;
@@ -2391,5 +2393,1128 @@ a {
 .marketing .rightBox .courseOverwiew .next i {
   margin-left: 5px;
   font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.courseGRid {
+  width: 100%;
+  padding: 4rem;
+  background-image: url(../photos/backgroundcourse.jpeg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-color: #fcfcf2;
+}
+
+.courseGRid .bigBox .textBox {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+.courseGRid .bigBox .textBox h1 {
+  color: #072f60;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: Heebo;
+}
+
+.courseGRid .bigBox .textBox p {
+  color: #666666;
+}
+
+.courseGRid .bigBox .textBox p span:first-child {
+  margin-right: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.courseGRid .bigBox .textBox p span:first-child:hover {
+  color: #3BBCA7;
+}
+
+.courseGRid .bigBox .textBox p span:first-child:hover .grid {
+  color: #666666;
+}
+
+.courseGRid .bigBox .textBox p span:last-child {
+  margin-left: 10px;
+  color: #3BBCA7;
+}
+
+.expLore {
+  width: 100%;
+  position: relative;
+}
+
+.expLore .topText {
+  padding-top: 3rem;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.expLore .topText h1 {
+  position: relative;
+  color: #141948;
+  z-index: 1;
+  font-weight: 600;
+}
+
+.expLore .topText h1 .color {
+  position: absolute;
+  top: 15px;
+  left: 24%;
+  height: 23px;
+  width: 185px;
+  border-radius: 15px;
+  background-color: #ffd24d;
+  z-index: -1;
+}
+
+.expLore .topText ul {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.expLore .topText ul li {
+  display: inline-block;
+}
+
+.expLore .topText ul li a {
+  font-weight: 700;
+  padding: 1em 2em;
+  display: inline-block;
+  text-decoration: none;
+  color: #141948;
+  font-size: 13px;
+  font-weight: 600;
+  position: relative;
+}
+
+.expLore .topText ul li a .numbs {
+  position: absolute;
+  top: 7px;
+  right: 15px;
+  font-size: 10px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  color: #3BBCA7;
+}
+
+.expLore .topText ul li a.active {
+  color: #3BBCA7;
+}
+
+.expLore .topText ul li a.active .numbs {
+  opacity: 1;
+}
+
+.expLore .topText ul li a:hover {
+  color: #3BBCA7;
+}
+
+.expLore .topText ul li a:hover .numbs {
+  opacity: 1;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.expLore .topText ul li .botBig {
+  width: 90%;
+  display: none;
+  position: absolute;
+  left: 7%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 5rem;
+}
+
+.expLore .topText ul li .botBig.bigActive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.expLore .topText ul li .botBig .courseBox {
+  width: 22%;
+  margin: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 16px 0 rgba(67, 65, 65, 0.217);
+          box-shadow: 0 0 16px 0 rgba(67, 65, 65, 0.217);
+  margin-bottom: 20px;
+  position: relative;
+  text-align: left;
+}
+
+.expLore .topText ul li .botBig .courseBox .imgBox {
+  position: relative;
+}
+
+.expLore .topText ul li .botBig .courseBox .imgBox:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #1c233694;
+}
+
+.expLore .topText ul li .botBig .courseBox .imgBox:hover::before {
+  opacity: 1;
+}
+
+.expLore .topText ul li .botBig .courseBox .miniText .midText {
+  padding: 15px 30px;
+}
+
+.expLore .topText ul li .botBig .courseBox .miniText .midText span {
+  display: inline-block;
+  color: #3BBCA7;
+  padding: 7px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  background: #3bbca712;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.expLore .topText ul li .botBig .courseBox .miniText .midText span:hover {
+  background: #3BBCA7;
+  color: white;
+}
+
+.expLore .topText ul li .botBig .courseBox .miniText .midText h6 {
+  margin: 20px 0;
+  color: #141948;
+  font-weight: 600;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.expLore .topText ul li .botBig .courseBox .miniText .midText h6:hover {
+  color: #3BBCA7;
+}
+
+.expLore .topText ul li .botBig .courseBox .miniText .person {
+  padding: 0 30px;
+}
+
+.expLore .topText ul li .botBig .courseBox .miniText .person img {
+  border-radius: 20px;
+  width: 35px;
+}
+
+.expLore .topText ul li .botBig .courseBox .miniText .person p {
+  display: inline;
+  margin-left: 5px;
+  font-size: 15px;
+  font-weight: 200;
+  color: gray;
+}
+
+.expLore .topText ul li .botBig .courseBox .miniText .scoreBox {
+  padding: 10px 30px;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(128, 128, 128, 0.184);
+}
+
+.expLore .topText ul li .botBig .courseBox .miniText .scoreBox .left p {
+  display: inline;
+  margin-right: 10px;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.expLore .topText ul li .botBig .courseBox .miniText .scoreBox .left p i {
+  margin-right: 7px;
+  color: #3BBCA7;
+  font-size: 15px;
+}
+
+.expLore .topText ul li .botBig .courseBox .miniText .scoreBox .right {
+  text-align: end;
+}
+
+.expLore .topText ul li .botBig .courseBox .miniText .scoreBox .right i {
+  color: #ffd24d;
+}
+
+.expLore .topText ul li .botBig .courseBox .free {
+  position: absolute;
+  right: 10%;
+  top: 45%;
+  -webkit-transform: translate(-10%, -45%);
+          transform: translate(-10%, -45%);
+}
+
+.expLore .topText ul li .botBig .courseBox .free span {
+  z-index: 10;
+  padding: 18px 8px;
+  background-color: #3BBCA7;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 50px;
+  color: white;
+}
+
+.expLore .topText ul li .botBig .courseBox .free .fRee {
+  padding: 18px 13px;
+}
+
+.expLore .pagesBox {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 9%;
+  margin: 30px;
+  text-align: center;
+}
+
+.expLore .pagesBox ul li span {
+  font-family: Heebo;
+  color: #666666;
+  margin-left: 15px;
+}
+
+.expLore .pagesBox ul li span.active {
+  padding: 5px 13px;
+  border-radius: 20px;
+  background-color: #3BBCA7;
+  color: white;
+}
+
+.expLore .pagesBox ul li span i {
+  font-size: 23px;
+}
+
+@media (max-width: 768px) {
+  .courseGRid {
+    padding: 3rem;
+  }
+  .courseGRid .bigBox .textBox {
+    width: 100%;
+    padding-top: 2rem;
+  }
+  .courseGRid .bigBox .textBox h1 {
+    font-size: 32px;
+  }
+  .courseGRid .bigBox .textBox p {
+    font-size: 14px;
+  }
+  .expLore {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .expLore .topText {
+    width: 80%;
+  }
+  .expLore .topText ul {
+    width: 100%;
+    padding: 0;
+  }
+  .expLore .topText ul li {
+    padding: 0;
+    margin: 0;
+  }
+  .expLore .topText ul li a {
+    font-size: 10px;
+    margin: 0;
+    padding-right: 5px;
+  }
+  .expLore .topText ul li a .numbs {
+    right: 0;
+    top: -1px;
+  }
+  .expLore .topText ul li .botBig {
+    width: 100%;
+    left: 0%;
+  }
+  .expLore .topText ul li .botBig .courseBox {
+    width: 100%;
+  }
+  .expLore .topText ul li .botBig .courseBox .imgBox {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .expLore .topText ul li .botBig .courseBox .free {
+    top: 55%;
+    -webkit-transform: translateY(-55%);
+            transform: translateY(-55%);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .courseGRid {
+    padding: 3rem;
+  }
+  .courseGRid .bigBox .textBox {
+    width: 100%;
+    padding-top: 2rem;
+  }
+  .courseGRid .bigBox .textBox h1 {
+    font-size: 32px;
+  }
+  .courseGRid .bigBox .textBox p {
+    font-size: 14px;
+  }
+  .expLore {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .expLore .topText {
+    width: 100%;
+  }
+  .expLore .topText ul {
+    text-align: center;
+    width: 80%;
+    padding: 0;
+  }
+  .expLore .topText ul li a {
+    font-size: 13px;
+    margin: 0;
+    padding-right: 5px;
+  }
+  .expLore .topText ul li a .numbs {
+    right: 0;
+    top: -1px;
+  }
+  .expLore .topText ul li .botBig {
+    width: 100%;
+    left: 0%;
+  }
+  .expLore .topText ul li .botBig .courseBox {
+    width: 100%;
+  }
+  .expLore .topText ul li .botBig .courseBox .imgBox {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .expLore .topText ul li .botBig .courseBox .imgBox img {
+    width: 100%;
+  }
+  .expLore .topText ul li .botBig .courseBox .free {
+    top: 55%;
+    -webkit-transform: translateY(-55%);
+            transform: translateY(-55%);
+  }
+}
+
+.completeCourse {
+  background: url(../photos/backgrounddigital.jpeg);
+  padding: 2rem 0;
+}
+
+.completeCourse .bigCourse {
+  width: 90%;
+  margin: auto;
+  padding: 3rem 0;
+}
+
+.completeCourse .bigCourse .textBox {
+  width: 70%;
+}
+
+.completeCourse .bigCourse .textBox .icons i {
+  color: #ffd24d;
+  font-size: 17px;
+}
+
+.completeCourse .bigCourse .textBox .icons span {
+  font-size: 13px;
+  font-weight: bold;
+  color: #141948;
+}
+
+.completeCourse .bigCourse .textBox h2 {
+  color: #141948;
+  padding: 20px 0;
+  font-weight: 600;
+}
+
+.completeCourse .bigCourse .textBox span {
+  color: #666666;
+  font-size: 18px;
+}
+
+.completeCourse .bigCourse .textBox .person {
+  width: 80%;
+  margin-top: 20px;
+  border-right: 1px solid rgba(144, 142, 142, 0.184);
+}
+
+.completeCourse .bigCourse .textBox .person img {
+  border-radius: 25px;
+  width: 40px;
+}
+
+.completeCourse .bigCourse .textBox .person p {
+  display: inline;
+  margin-left: 8px;
+  font-size: 13px;
+  color: #141948;
+  font-weight: bold;
+}
+
+.completeCourse .bigCourse .textBox .update {
+  margin-top: 20px;
+  padding-top: 8px;
+}
+
+.completeCourse .bigCourse .textBox .update h6 {
+  display: inline;
+  color: #141948;
+}
+
+.completeCourse .bigCourse .textBox .update span {
+  font-size: 13px;
+  color: #3BBCA7;
+  font-weight: 300;
+}
+
+.overview {
+  padding: 2rem 0;
+}
+
+.overview .videoPlay {
+  position: fixed;
+  top: 0%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.overview .videoPlay.activeVideoPlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overview .videoPlay iframe {
+  position: fixed;
+  top: 10%;
+  left: 12%;
+  width: 1200px;
+  height: 650px;
+}
+
+.overview .videoPlay i {
+  position: absolute;
+  font-size: 30px;
+  top: 1%;
+  right: 1%;
+  color: white;
+}
+
+.overview .allView {
+  width: 90%;
+  margin: auto;
+}
+
+.overview .allView .leftView .tabCont {
+  margin-bottom: 2rem;
+}
+
+.overview .allView .leftView .tabCont ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.overview .allView .leftView .tabCont ul li {
+  cursor: pointer;
+}
+
+.overview .allView .leftView .tabCont ul li h5 {
+  padding: 0 35px 8px 15px;
+  border-bottom: 3px solid #ababab;
+  color: #ababab;
+  position: relative;
+}
+
+.overview .allView .leftView .tabCont ul li.actiVeLi h5 {
+  color: #141948;
+}
+
+.overview .allView .leftView .tabCont ul li.actiVeLi h5::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #3BBCA7;
+}
+
+.overview .allView .leftView .tabBottom .tabBox {
+  display: none;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.active {
+  display: block;
+}
+
+.overview .allView .leftView .tabBottom .tabBox .midTop p {
+  font-size: 17px;
+  line-height: 28px;
+  color: #666666;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.overview .allView .leftView .tabBottom .tabBox .botTop {
+  margin-top: 2rem;
+  padding: 3rem;
+  background-color: #f6f7f9;
+}
+
+.overview .allView .leftView .tabBottom .tabBox .botTop h3 {
+  color: #141948;
+}
+
+.overview .allView .leftView .tabBottom .tabBox .botTop .boxLeft {
+  margin-top: 2rem;
+}
+
+.overview .allView .leftView .tabBottom .tabBox .botTop .boxLeft ul li .text {
+  color: #666666;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox .botTop .boxLeft ul li .icon {
+  display: inline-block;
+  color: #141948;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.overview .allView .leftView .tabBottom .tabBox .botTop .boxRight {
+  margin-top: 2rem;
+}
+
+.overview .allView .leftView .tabBottom .tabBox .botTop .boxRight ul li .text {
+  color: #666666;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox .botTop .boxRight ul li .icon {
+  color: #141948;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion {
+  margin: 40px 0;
+  border: 1px solid rgba(144, 142, 142, 0.184);
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion h5 {
+  padding: 20px;
+  font-size: 17px;
+  color: #141948;
+  font-weight: bold;
+  position: relative;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion h5::after {
+  position: absolute;
+  content: "\02795";
+  right: 4%;
+  font-size: 13px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion h5.active::after {
+  content: "\2796";
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel {
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel ul {
+  margin: 0%;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel ul li {
+  position: relative;
+  padding: 20px;
+  font-weight: 200;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel ul li.bagc {
+  background-color: #f8f8f8;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel ul li a {
+  text-decoration: none;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel ul li a span {
+  text-decoration: none;
+  text-align: right;
+  font-family: heebo;
+  color: #666666;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  font-size: 15px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel ul li a span:hover {
+  color: #3BBCA7;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel ul li a span i {
+  margin-right: 5px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel ul li a .prev {
+  position: absolute;
+  font-size: 14px;
+  width: 10%;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  background-color: #3BBCA7;
+  color: white;
+  display: inline;
+  font-weight: 200;
+  right: 5%;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.instructor .instBox .leftInst img {
+  border-radius: 50px;
+  width: 100px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.instructor .instBox .leftInst .iconBox {
+  margin-top: 30px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.instructor .instBox .leftInst .iconBox i {
+  padding: 8px;
+  color: #666666;
+  border-radius: 20px;
+  border: 1px solid #666666;
+  margin-right: 5px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.instructor .instBox .leftInst .iconBox i:hover {
+  background-color: #3BBCA7;
+  color: white;
+  border: 1px solid #3BBCA7;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.instructor .instBox .rightInst {
+  margin-left: -2rem;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.instructor .instBox .rightInst h4 {
+  color: #141948;
+  margin-bottom: 30px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.instructor .instBox .rightInst span {
+  font-size: 14px;
+  color: #666666;
+  line-height: 30px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .leftReview {
+  padding: 30px 0;
+  text-align: center;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-top: 20px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .leftReview h1 {
+  font-size: 4rem;
+  color: #141948;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .leftReview i {
+  color: #ffd24d;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .leftReview p {
+  color: #666666;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .rightReview {
+  margin: 30px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .rightReview .rates .rateBox .left i {
+  color: #ffd24d;
+  font-size: 18px;
+  margin-left: 7px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .rightReview .rates .mid {
+  margin-top: 8px;
+  height: 8px;
+  background-color: rgba(144, 142, 142, 0.184);
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .rightReview .rates .mid .yellow {
+  width: 50%;
+  height: 100%;
+  background-color: #ffd24d;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .botRev {
+  padding: 20px 0;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .botRev button {
+  padding: 10px 20px;
+  background-color: #3BBCA7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .botRev button:hover::before {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .botRev button::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #3BBCA7;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .botRev h2 {
+  color: #141948;
+  font-weight: 600;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .botRev .comment {
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(100, 100, 111, 0.2);
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .botRev .comment.fred {
+  border: none;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .botRev .comment .imgBox img {
+  width: 100px;
+  border-radius: 50px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .botRev .comment .textBox {
+  position: relative;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .botRev .comment .textBox h4 {
+  color: #141948;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .botRev .comment .textBox h6 {
+  margin-top: 20px;
+  color: #141948;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .botRev .comment .textBox span {
+  line-height: 30px;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .botRev .comment .textBox .iconBox {
+  position: absolute;
+  top: 0;
+  right: 3%;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .botRev .comment .textBox .iconBox i {
+  color: #ffd24d;
+  margin-right: 2px;
+  font-size: 20px;
+}
+
+.overview .allView .rightView {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0 0 10px 10px;
+  margin-top: -200px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -100px;
+  padding-bottom: 25px;
+}
+
+.overview .allView .rightView .videoBox {
+  width: 100%;
+  position: relative;
+}
+
+.overview .allView .rightView .videoBox .videoImg {
+  width: 100%;
+}
+
+.overview .allView .rightView .videoBox .videoImg img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.overview .allView .rightView .videoBox .videoImg i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 18px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.overview .allView .rightView .midBox {
+  margin: 20px 40px;
+  border-bottom: 1px solid rgba(144, 142, 142, 0.184);
+  padding-bottom: 20px;
+}
+
+.overview .allView .rightView .midBox ul li {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.overview .allView .rightView .midBox ul li a {
+  color: #666666;
+  font-size: 15px;
+}
+
+.overview .allView .rightView .midBox ul li a span {
+  font-weight: 500;
+}
+
+.overview .allView .rightView .midBox ul li a .date {
+  position: absolute;
+  right: 5%;
+  display: inline;
+  font-size: 14px;
+}
+
+.overview .allView .rightView .botBox {
+  padding: 0 2rem;
+}
+
+.overview .allView .rightView .botBox ul li {
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(144, 142, 142, 0.184);
+}
+
+.overview .allView .rightView .botBox ul li:last-child {
+  border: none;
+}
+
+.overview .allView .rightView .botBox ul li a {
+  text-decoration: none;
+  color: #666666;
+}
+
+.overview .allView .rightView .botBox ul li a span {
+  font-size: 14px;
+  color: #141948;
+  font-weight: 600;
+}
+
+.overview .allView .rightView .botBox ul li a span i {
+  margin-right: 10px;
+  color: #666666;
+}
+
+.overview .allView .rightView .botBox ul li a .info {
+  display: inline;
+  position: absolute;
+  right: 15px;
+  font-size: 13px;
+}
+
+.overview .allView .rightView .botBox .source {
+  width: 75%;
+  margin: 10px auto;
+  border: 2px solid #3BBCA7;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+}
+
+.overview .allView .rightView .botBox .source:hover .tool {
+  visibility: visible;
+}
+
+.overview .allView .rightView .botBox .source a {
+  display: block;
+  padding: 7px 0;
+  color: #3BBCA7;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.overview .allView .rightView .botBox .source a i {
+  margin-right: 5px;
+}
+
+.overview .allView .rightView .botBox .source .tool {
+  position: absolute;
+  top: -75%;
+  visibility: hidden;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 50%;
+  z-index: 1;
+}
+
+.overview .allView .rightView .botBox .source .tool i {
+  margin: 0;
+  padding: 0;
+  color: white;
+  padding: 5px;
+  margin-left: -5px;
+  vertical-align: middle;
+  background-color: #141948;
+}
+
+.overview .allView .rightView .botBox .source .tool i:hover {
+  background-color: rgba(12, 12, 145, 0.768);
+}
+
+@media (max-width: 768px) {
+  .completeCourse .bigCourse .textBox {
+    width: 90%;
+  }
+  .completeCourse .bigCourse .textBox h2 {
+    font-size: 35px;
+  }
+  .completeCourse .bigCourse .textBox span {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .completeCourse .bigCourse .textBox .person {
+    margin-top: 2rem;
+  }
+  .completeCourse .bigCourse .textBox .update {
+    padding: 0;
+    margin: -15px 0 0 3.3rem;
+  }
+  .completeCourse .bigCourse .textBox .update h6 {
+    font-size: 12px;
+  }
+  .allView .leftView {
+    overflow: hidden;
+  }
+  .allView .leftView .tabCont {
+    margin: 0 !important;
+  }
+  .allView .leftView .tabCont ul li {
+    text-align: center;
+    width: 100%;
+  }
+  .allView .leftView .tabCont ul li h5 {
+    padding: 10px !important;
+    font-size: 16px !important;
+  }
+  .allView .leftView .tabBottom .tabBox.instructor .instBox .leftInst {
+    text-align: center;
+  }
+  .allView .leftView .tabBottom .tabBox.instructor .instBox .rightInst {
+    margin: 0;
+    padding: 20px 0;
+  }
+  .allView .leftView .tabBottom .tabBox.reviews .botRev {
+    margin-bottom: 2rem;
+  }
+  .allView .leftView .tabBottom .tabBox.reviews .botRev .comment .textBox span {
+    font-size: 14px;
+  }
+  .allView .rightView {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .completeCourse .bigCourse .textBox {
+    width: 90%;
+  }
+  .completeCourse .bigCourse .textBox h2 {
+    font-size: 35px;
+  }
+  .completeCourse .bigCourse .textBox span {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .completeCourse .bigCourse .textBox .person {
+    margin-top: 2rem;
+  }
+  .completeCourse .bigCourse .textBox .update {
+    padding: 0;
+    margin: -15px 0 0 3.3rem;
+  }
+  .completeCourse .bigCourse .textBox .update h6 {
+    font-size: 12px;
+  }
+  .overview .allView .rightView {
+    margin-top: 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,470 @@
+@import "_variable";
+
+a {
+    text-decoration: none;
+}
+
+// section courseGRid start
+
+.courseGRid {
+    width: 100%;
+    padding: 4rem;
+    // padding: 40px 0 3rem 0;
+    background-image: url(../photos/backgroundcourse.jpeg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-color: #fcfcf2;
+
+    .bigBox {
+        .textBox {
+            width: 50%;
+            text-align: center;
+            margin: auto;
+            padding-top: 3rem;
+
+            h1 {
+                color: #072f60;
+                font-size: 40px;
+                font-weight: bolder;
+                font-family: Heebo;
+            }
+
+            p {
+                color: $textcolor;
+                span {
+                    &:first-child {
+                        margin-right: 10px;
+                        transition: 0.4s;
+                        &:hover {
+                            color: $aqua;
+                            .grid {
+                                color: $textcolor;
+                            }
+                        }
+                    }
+                    &:last-child {
+                        margin-left: 10px;
+                        color: $aqua;
+                    }
+                }
+            }
+
+            // .home {
+            //     color: $textcolor;
+            //     transition: 0.2s;
+            //     font-weight: 200;
+
+            //     &:hover {
+            //         color: $aqua;
+
+            //         .grid {
+            //             color: $textcolor;
+            //         }
+            //     }
+            // }
+
+            // .slash {
+            //     margin: 0 5px;
+            // }
+
+            // .grid {
+            //     font-weight: 200;
+            //     color: $aqua;
+            //     transition: 0.2s ease-in;
+            // }
+        }
+    }
+}
+
+// section courseGRid end
+// section expLore end
+.expLore {
+    width: 100%;
+    position: relative;
+    .topText {
+        padding-top: 3rem;
+        width: 60%;
+        margin: auto;
+        text-align: center;
+
+        h1 {
+            position: relative;
+            color: $darkblue;
+            z-index: 1;
+            font-weight: 600;
+
+            .color {
+                position: absolute;
+                top: 15px;
+                left: 24%;
+                height: 23px;
+                width: 185px;
+                border-radius: 15px;
+                background-color: $yellow;
+                z-index: -1;
+            }
+        }
+
+        ul {
+            width: 90%;
+            margin: 0 auto;
+            padding: 0 30px;
+
+            li {
+                display: inline-block;
+
+                a {
+                    font-weight: 700;
+                    padding: 1em 2em;
+                    display: inline-block;
+                    text-decoration: none;
+                    color: $darkblue;
+                    font-size: 13px;
+                    font-weight: 600;
+                    position: relative;
+
+                    .numbs {
+                        position: absolute;
+                        top: 7px;
+                        right: 15px;
+                        font-size: 10px;
+                        transform: translateY(0);
+                        transition: 0.5s;
+                        opacity: 0;
+                        color: $aqua;
+                    }
+
+                    &.active {
+                        color: $aqua;
+                        .numbs{
+                            opacity: 1;
+                        }
+                    }
+
+                    &:hover {
+                        color: $aqua;
+
+                        .numbs {
+                            opacity: 1;
+                            transform: translateY(-3px);
+                        }
+                    }
+                }
+                .botBig {
+                    width: 90%;
+                    display: none;
+                    position: absolute;
+                    left: 7%;
+                    flex-wrap: wrap;
+                    padding-bottom: 5rem;
+                    &.bigActive {
+                        display: flex;
+                    }
+                    .courseBox {
+                        width: 22%;
+                        margin: 15px;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        box-shadow: 0 0 16px 0 rgba(67, 65, 65, 0.217);
+                        // height: 500px;
+                        margin-bottom: 20px;
+                        position: relative;
+                        text-align: left;
+
+                        // imgBox start
+                        .imgBox {
+                            position: relative;
+
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                opacity: 0;
+                                border-radius: 10px;
+                                transition: 0.5s;
+                                background-color: #1c233694;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+
+                        // imgBox end
+                        .miniText {
+                            .midText {
+                                padding: 15px 30px;
+
+                                span {
+                                    display: inline-block;
+                                    color: $aqua;
+                                    padding: 7px 12px;
+                                    font-size: 13px;
+                                    font-weight: 600;
+                                    background: #3bbca712;
+                                    transition: 0.4s;
+                                    border-radius: 5px;
+
+                                    &:hover {
+                                        background: $aqua;
+                                        color: $white;
+                                    }
+                                }
+
+                                h6 {
+                                    margin: 20px 0;
+                                    color: $darkblue;
+                                    font-weight: 600;
+                                    transition: 0.4s;
+                                    cursor: pointer;
+
+                                    &:hover {
+                                        color: $aqua;
+                                    }
+                                }
+                            }
+
+                            .person {
+                                padding: 0 30px;
+
+                                img {
+                                    border-radius: 20px;
+                                    width: 35px;
+                                }
+
+                                p {
+                                    display: inline;
+                                    margin-left: 5px;
+                                    font-size: 15px;
+                                    font-weight: 200;
+                                    color: gray;
+                                }
+                            }
+
+                            .scoreBox {
+                                padding: 10px 30px;
+                                margin-top: 2rem;
+                                border-top: 1px solid rgba(128, 128, 128, 0.184);
+
+                                .left {
+                                    p {
+                                        display: inline;
+                                        margin-right: 10px;
+                                        color: $textcolor;
+                                        font-size: 14px;
+                                        font-weight: 200;
+
+                                        i {
+                                            margin-right: 7px;
+                                            color: $aqua;
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+
+                                // left end
+                                // right start
+                                .right {
+                                    text-align: end;
+
+                                    i {
+                                        color: $yellow;
+                                    }
+                                }
+                            }
+                        }
+
+                        .free {
+                            position: absolute;
+                            right: 10%;
+                            top: 45%;
+                            transform: translate(-10%, -45%);
+
+                            span {
+                                z-index: 10;
+                                padding: 18px 8px;
+                                background-color: $aqua;
+                                font-size: 12px;
+                                font-weight: 500;
+                                border-radius: 50px;
+                                color: $white;
+                            }
+                            .fRee{
+                                padding: 18px 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // topText end
+    .pagesBox {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 9%;
+        margin: 30px;
+        text-align: center;
+
+        ul {
+            li {
+                span {
+                    font-family: Heebo;
+                    color: $textcolor;
+                    margin-left: 15px;
+
+                    &.active {
+                        padding: 5px 13px;
+                        border-radius: 20px;
+                        background-color: $aqua;
+                        color: $white;
+                    }
+
+                    i {
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// section expLore end
+// .ffooT{
+//     margin-top: 70rem;
+// }
+
+
+
+// RESPONSIVE START
+
+@media (max-width: 768px) {
+    .courseGRid {
+        padding: 3rem;
+        .bigBox {
+            .textBox {
+                width: 100%;
+                padding-top: 2rem;
+                h1 {
+                    font-size: 32px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .expLore {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        .topText {
+            width: 80%;
+            ul {
+                width: 100%;
+                padding: 0;
+                li {
+                    padding: 0;
+                    margin: 0;
+                    a{
+                        font-size: 10px;
+                        margin: 0;
+                        padding-right: 5px;
+                        .numbs{
+                            right: 0;
+                            top: -1px;
+                        }
+                    }
+                    .botBig {
+                        width: 100%;
+                        left: 0%;
+                        .courseBox {
+                            width: 100%;
+                            .imgBox {
+                                object-fit: cover;
+                            }
+                            .free {
+                                top: 55%;
+                                transform: translateY(-55%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+      
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .courseGRid {
+        padding: 3rem;
+        .bigBox {
+            .textBox {
+                width: 100%;
+                padding-top: 2rem;
+                h1 {
+                    font-size: 32px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .expLore {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        .topText {
+            width: 100%;
+            ul {
+                text-align: center;
+                width: 80%;
+                padding: 0;
+                li {
+                    a{
+                        font-size: 13px;
+                        margin: 0;
+                        padding-right: 5px;
+                        .numbs{
+                            right: 0;
+                            top: -1px;
+                        }
+                    }
+                    .botBig {
+                        width: 100%;
+                        left: 0%;
+                        .courseBox {
+                            width: 100%;
+                            .imgBox {
+                                width: 100%;
+                                object-fit: cover;
+                                img{
+                                    width: 100%;
+                                    
+                                }
+                            }
+                            .free {
+                                top: 55%;
+                                transform: translateY(-55%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+      
+    }
+}
+
+
