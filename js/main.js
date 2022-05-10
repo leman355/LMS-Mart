@@ -1,238 +1,137 @@
-// var prevScrollpos = window.pageYOffset;
+var prevScrollpos = window.pageYOffset;
 
-// /* Get the header element and it's position */
-// var headerDiv = document.querySelector("header");
+var headerDiv = document.querySelector("header");
 // var headerBottom = headerDiv.offsetTop + headerDiv.offsetHeight;
 
-// window.onscroll = function() {
-//   var currentScrollPos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
 
-//   /* if scrolling down, let it scroll out of view as normal */
-//   if (prevScrollpos <= currentScrollPos ){
-//       headerDiv.classList.remove("fixedToTop");
-//       headerDiv.style.top ="-7.2rem";
-//   }
-//   /* otherwise if we're scrolling up, fix the nav to the top */
-//   else{  
-//       headerDiv.classList.add("fixedToTop");
-//       headerDiv.style.top = "0";
-//   }
+  if (prevScrollpos <= currentScrollPos ){
+      headerDiv.classList.remove("fixedToTop");
+      headerDiv.style.top ="-7.2rem";
+  }
+  else{  
+      headerDiv.classList.add("fixedToTop");
+      headerDiv.style.top = "0";
+  }
 
-//   prevScrollpos = currentScrollPos;
-// }
-
-
-
-// let bars = document.querySelector("#header .myContainer .bars");
-// let barsF = document.querySelector("#header .myContainer .bars .barsF");
-// let iks = document.querySelector("#header .myContainer .bars .iks");
-
-// let bigmenu = document.querySelector("#header .bigMenu");
-// let menu = document.querySelector("#header .bigMenu menu");
-// let resX = document.querySelector("#header .bigMenu  .resX");
-
-// bars.addEventListener("click", function () {
-//   barsF.classList.add("togglebarsF");
-//   iks.classList.add("toggleIks");
-//   bigmenu.classList.add("navActive");
-//   menu.classList.add("menuActive");
-//   // setInterval(function () {
-//   resX.classList.toggle("resXAnim");
-//   //    }, 1000);
-// });
-// resX.addEventListener("click", function () {
-//   barsF.classList.remove("togglebarsF");
-//   iks.classList.remove("toggleIks");
-//   bigmenu.classList.remove("navActive");
-//   menu.classList.aremovedd("menuActive");
-// });
-
-// let homeLi = document.querySelectorAll(
-//   "#header .bigMenu   .menu ul .homeli .homeA"
-// );
-// let aI = document.querySelectorAll(
-//   "#header .bigMenu   .menu ul .homeli a .dDown"
-// );
-// let home = document.querySelectorAll(
-//   "#header .bigMenu  .menu ul .homeli .home"
-// );
-// let courseGridA = document.querySelectorAll(
-//   "#header .bigMenu  .menu ul .homeli .home .courseGrid .courseGridA"
-// );
-// let courseGridI = document.querySelectorAll(
-//   "#header .bigMenu  .menu ul .homeli .home .courseGrid .courseGridA .rDown"
-// );
-// let course = document.querySelectorAll(
-//   "#header .bigMenu  .menu ul .homeli .home .courseGrid .course"
-// );
-
-// for (let i = 0; i < homeLi.length; i++) {
-//   homeLi[i].addEventListener("click", function () {
-//     aI[i].classList.toggle("itransform");
-//     home[i].classList.toggle("relHome");
-//   });
-// }
-
-// for (let i = 0; i < courseGridA.length; i++) {
-//   courseGridA[i].addEventListener("click", function () {
-//     courseGridI[i].classList.toggle("courseI");
-//     course[i].classList.toggle("relCourse");
-//   });
-// }
-
-// let videoBox = document.querySelector(".why .videoBox");
-// let play = document.querySelectorAll(".why .this .discuss i");
-// let closeBox = document.querySelector(".why .videoBox i");
-
-// for (let i = 0; i < play.length; i++) {
-//   play[i].addEventListener("click", function () {
-//     videoBox.classList.add("activeVideo");
-//   });
-//   closeBox.addEventListener("click", function () {
-//     videoBox.classList.remove("activeVideo");
-//   });
-// }
-
-// let arrUp = document.querySelector(".arrUp");
-
-// window.onscroll = function () {
-//   scrollFunction();
-// };
-// function scrollFunction() {
-//   if (
-//     document.body.scrollTop > 700 ||
-//     document.documentElement.scrollTop > 700
-//   ) {
-//     arrUp.classList.add("arrUpactive");
-//   } else {
-//     arrUp.classList.remove("arrUpactive");
-//   }
-// }
-
-// function topFunction() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }
-
-// let filterLeftLi = document.querySelectorAll(".filterLeft ul li");
-// let filterLeftP = document.querySelectorAll(".filterLeft ul li p");
-
-// for (let i = 0; i < filterLeftLi.length; i++) {
-//   filterLeftLi[i].addEventListener("click", function () {
-//     filterLeftP[i].classList.toggle("toggleP");
-//   });
-// }
-
-// let topshowI = document.querySelectorAll(".filterLeft .showing .topShow i");
-// let cookingCourseBoxes = document.querySelectorAll(
-//   ".filterLeft .showing .cookingCourseBoxes"
-// );
-
-// for (let i = 0; i < topshowI.length; i++) {
-//   topshowI[i].addEventListener("click", function () {
-//     for (let j = 0; j < cookingCourseBoxes.length; j++) {
-//       topshowI[j].classList.remove("activeI");
-//       cookingCourseBoxes[j].classList.remove("activeCook");
-//     }
-//     cookingCourseBoxes[i].classList.add('activeCook')
-//     topshowI[i].classList.add("activeI");
-//   });
-// }
-
-
-
-
-
-var introduction=document.querySelectorAll(".marketing .marketingLeft .accordionmenu .introduction")
-var introductionUl=document.querySelectorAll(".marketing .marketingLeft .accordionmenu ul")
-
-for(let i=0; i<introduction.length; i++){
-  introduction[i].addEventListener("click", function(){
-        introductionUl[i].classList.toggle("ulActive")
-        introduction[i].classList.toggle("activeInt")
-    })
+  prevScrollpos = currentScrollPos;
 }
 
 
 
+let bars = document.querySelector("#header .myContainer .bars");
+let barsF = document.querySelector("#header .myContainer .bars .barsF");
+let iks = document.querySelector("#header .myContainer .bars .iks");
 
+let bigmenu = document.querySelector("#header .bigMenu");
+let menu = document.querySelector("#header .bigMenu menu");
+let resX = document.querySelector("#header .bigMenu  .resX");
 
-
-
-
-
-
-
-
-
-
-
-
-
-"use strict";
-
-let a = document.querySelectorAll(".expLore .topText ul li a");
-let botBig = document.querySelectorAll(".expLore .botBig");
-
-for (let i = 0; i < a.length; i++) {
-  a[i].onclick = function () {
-    for (let j = 0; j < botBig.length; j++) {
-      botBig[j].classList.remove("bigActive");
-      a[j].classList.remove("active");
-    }
-    botBig[i].classList.add("bigActive");
-    a[i].classList.add("active");
-  };
-}
-
-let boxVideo = document.querySelector(".overview .videoPlay");
-let playIcon = document.querySelector(
-  ".overview .allView .rightView .videoBox .videoImg i"
-);
-let closeIcon = document.querySelector(".overview .videoPlay i");
-
-playIcon.addEventListener("click", function () {
-  boxVideo.classList.add("activeVideoPlay");
+bars.addEventListener("click", function () {
+  barsF.classList.add("togglebarsF");
+  iks.classList.add("toggleIks");
+  bigmenu.classList.add("navActive");
+  menu.classList.add("menuActive");
+  // setInterval(function () {
+  resX.classList.toggle("resXAnim");
+  //    }, 1000);
 });
-closeIcon.addEventListener("click", function () {
-  boxVideo.classList.remove("activeVideoPlay");
+resX.addEventListener("click", function () {
+  barsF.classList.remove("togglebarsF");
+  iks.classList.remove("toggleIks");
+  bigmenu.classList.remove("navActive");
+  menu.classList.aremovedd("menuActive");
 });
 
-let tabBtn = document.querySelectorAll(
-  ".overview .allView .leftView .tabCont ul li"
+let homeLi = document.querySelectorAll(
+  "#header .bigMenu   .menu ul .homeli .homeA"
 );
-let tabBody = document.querySelectorAll(
-  " .overview .allView .leftView .tabBottom .tabBox"
+let aI = document.querySelectorAll(
+  "#header .bigMenu   .menu ul .homeli a .dDown"
+);
+let home = document.querySelectorAll(
+  "#header .bigMenu  .menu ul .homeli .home"
+);
+let courseGridA = document.querySelectorAll(
+  "#header .bigMenu  .menu ul .homeli .home .courseGrid .courseGridA"
+);
+let courseGridI = document.querySelectorAll(
+  "#header .bigMenu  .menu ul .homeli .home .courseGrid .courseGridA .rDown"
+);
+let course = document.querySelectorAll(
+  "#header .bigMenu  .menu ul .homeli .home .courseGrid .course"
 );
 
-for (let i = 0; i < tabBtn.length; i++) {
-  tabBtn[i].onclick = function () {
-    for (let j = 0; j < tabBody.length; j++) {
-      tabBody[j].classList.remove("active");
-    tabBtn[j].classList.remove("actiVeLi")
-    }
-    tabBtn[i].classList.add("actiVeLi")
-    var btni = this.getAttribute("data-li");
-    tabBody[btni].classList.add("active");
-  };
-}
-
-var acc = document.querySelectorAll(".tabBox .accordion h5");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
+for (let i = 0; i < homeLi.length; i++) {
+  homeLi[i].addEventListener("click", function () {
+    aI[i].classList.toggle("itransform");
+    home[i].classList.toggle("relHome");
   });
 }
 
-function myFunction(x) {
-  x.classList.toggle("fa-angle-up");
+for (let i = 0; i < courseGridA.length; i++) {
+  courseGridA[i].addEventListener("click", function () {
+    courseGridI[i].classList.toggle("courseI");
+    course[i].classList.toggle("relCourse");
+  });
+}
+
+let videoBox = document.querySelector(".why .videoBox");
+let play = document.querySelectorAll(".why .this .discuss i");
+let closeBox = document.querySelector(".why .videoBox i");
+
+for (let i = 0; i < play.length; i++) {
+  play[i].addEventListener("click", function () {
+    videoBox.classList.add("activeVideo");
+  });
+  closeBox.addEventListener("click", function () {
+    videoBox.classList.remove("activeVideo");
+  });
+}
+
+let arrUp = document.querySelector(".arrUp");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 700 ||
+    document.documentElement.scrollTop > 700
+  ) {
+    arrUp.classList.add("arrUpactive");
+  } else {
+    arrUp.classList.remove("arrUpactive");
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+let filterLeftLi = document.querySelectorAll(".filterLeft ul li");
+let filterLeftP = document.querySelectorAll(".filterLeft ul li p");
+
+for (let i = 0; i < filterLeftLi.length; i++) {
+  filterLeftLi[i].addEventListener("click", function () {
+    filterLeftP[i].classList.toggle("toggleP");
+  });
+}
+
+let topshowI = document.querySelectorAll(".filterLeft .showing .topShow i");
+let cookingCourseBoxes = document.querySelectorAll(
+  ".filterLeft .showing .cookingCourseBoxes"
+);
+
+for (let i = 0; i < topshowI.length; i++) {
+  topshowI[i].addEventListener("click", function () {
+    for (let j = 0; j < cookingCourseBoxes.length; j++) {
+      topshowI[j].classList.remove("activeI");
+      cookingCourseBoxes[j].classList.remove("activeCook");
+    }
+    cookingCourseBoxes[i].classList.add('activeCook')
+    topshowI[i].classList.add("activeI");
+  });
 }
