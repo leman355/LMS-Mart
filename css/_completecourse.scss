@@ -132,15 +132,7 @@
                         &.actiVeLi {
                             h5 {
                                 color: $darkblue;
-                                &::before {
-                                    position: absolute;
-                                    content: "";
-                                    width: 100%;
-                                    height: 2px;
-                                    bottom: -2px;
-                                    left: 0;
-                                    background-color: $aqua;
-                                }
+                                border-bottom: 3px solid $aqua;
                             }
                         }
                     }
@@ -222,15 +214,15 @@
                                 color: $darkblue;
                                 font-weight: bold;
                                 position: relative;
-                                &::after {
-                                    position: absolute;
-                                    content: "\02795";
-                                    right: 4%;
-                                    font-size: 13px;
+                                p {
+                                    margin: 0;
+                                }
+                                i {
+                                    transition: 0.3s ease;
                                 }
                                 &.active {
-                                    &::after {
-                                        content: "\2796";
+                                    i {
+                                        transform: rotate(180deg);
                                     }
                                 }
                             }
@@ -349,7 +341,6 @@
                             .rates {
                                 .rateBox .left {
                                     i {
-                                 
                                         color: $yellow;
                                         font-size: 18px;
                                         margin-left: 7px;
@@ -511,12 +502,12 @@
 
             .duration {
                 padding: 30px;
-                p{
+                p {
                     font-weight: bold;
                     color: $darkblue;
                     font-size: 28px;
                 }
-                a{
+                a {
                     background-color: $aqua;
                     color: $white;
                     display: block;
@@ -612,6 +603,30 @@
 }
 
 // responsive start
+
+@media (max-width: 400px) {
+    .overview {
+        .videoPlay {
+            iframe {
+                height: 26%;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .overview {
+        .videoPlay {
+            iframe {
+                top: 35%;
+                left: 7%;
+                width: 85%;
+                height: 36%;
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
     // completeCourse start
 
@@ -646,6 +661,16 @@
     }
 
     // completeCourse end
+    .overview {
+        .videoPlay {
+            iframe {
+                top: 35%;
+                left: 7%;
+                width: 85%;
+                height: 50%;
+            }
+        }
+    }
     .allView {
         .leftView {
             overflow: hidden;
@@ -727,6 +752,14 @@
         }
     }
     .overview {
+        .videoPlay {
+            iframe {
+                top: 35%;
+                left: 7%;
+                width: 85%;
+                height: 60%;
+            }
+        }
         .allView {
             .rightView {
                 margin-top: 2rem;

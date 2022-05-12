@@ -19,6 +19,46 @@ window.onscroll = function() {
 }
 
 
+// Hide header on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var header = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If scrolled down and past the navbar, add class .nav-up.
+    if (st > lastScrollTop && st > header){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+  
+    lastScrollTop = st;
+}
+
+
+
 
 let bars = document.querySelector("#header .myContainer .bars");
 let barsF = document.querySelector("#header .myContainer .bars .barsF");
@@ -133,5 +173,23 @@ for (let i = 0; i < topshowI.length; i++) {
     }
     cookingCourseBoxes[i].classList.add('activeCook')
     topshowI[i].classList.add("activeI");
+  });
+}
+
+
+
+
+
+let secondVideo = document.querySelector(".stylecol .secondVideo");
+let secondPlay = document.querySelectorAll(".stylecol .fredHymanplay .fapIcon");
+let secondClose = document.querySelector(".stylecol .secondVideo i");
+
+
+for (let i = 0; i < secondPlay.length; i++) {
+  secondPlay[i].addEventListener("click", function () {
+    secondVideo.classList.add("secondActiveVideo");
+  });
+  secondClose.addEventListener("click", function () {
+    secondVideo.classList.remove("secondActiveVideo");
   });
 }

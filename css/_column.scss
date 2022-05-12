@@ -37,38 +37,44 @@
 }
 .stylecol {
     margin-top: 40px;
-
+    .secondVideo {
+        position: fixed;
+        top: 0%;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 2;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s ease;
+        &.secondActiveVideo {
+            opacity: 1;
+            visibility: visible;
+        }
+        iframe {
+            position: fixed;
+            top: 10%;
+            left: 12%;
+            width: 1200px;
+            height: 650px;
+        }
+        i {
+            position: absolute;
+            font-size: 30px;
+            top: 1%;
+            right: 1%;
+            color: $white;
+        }
+    }
     .fredHyman {
         border-radius: 5px;
         box-shadow: 5px 0px 10px 0px #aeaeae;
         margin: 40px 0;
         padding-bottom: 20px;
-        // position: absolute;
-        // .lfstyle{
-        // position: absolute;
-        // top:20px;
-        // left:10px;
-        // color:$white;
-        // background-color: $aqua;
-        // }
-        // &.faPlay{
-        //     position: relative;
-        // }
         img {
             border-radius: 5px;
         }
-        //         .fapIcon{
-        //    transform:translateX() ;
-        //             position: absolute;
-        //             bottom: 0%;
-        //             right:50%;
-        // // transform: translate(-50%,-50%);
-        //    color: #072F60;
-        //             background-color: white;
-        // border-radius: 50%;
-        // padding: 20px 22px;
-        // font-size: 20px;
-        //         }
         .textHyman {
             padding: 30px;
             h3 {
@@ -117,6 +123,11 @@
             border-radius: 50%;
             padding: 20px 22px;
             font-size: 20px;
+            transition: 0.3s ease;
+            &:hover {
+                background-color: $aqua;
+                color: $white;
+            }
         }
         .textHyman {
             padding: 30px;
@@ -166,6 +177,54 @@
                 color: white;
                 border-radius: 100%;
                 padding: 8px 15px;
+            }
+        }
+    }
+}
+
+// responsive
+@media (max-width: 576px) {
+    .stylecol {
+        .secondVideo {
+            iframe {
+                top: 35%;
+                left: 7%;
+                width: 85%;
+                height: 36%;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .stylecol {
+        .secondVideo {
+            iframe {
+                height: 26%;
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .stylecol {
+        .secondVideo {
+            iframe {
+                top: 35%;
+                left: 7%;
+                width: 85%;
+                height: 50%;
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .stylecol {
+        .secondVideo {
+            iframe {
+                top: 35%;
+                left: 7%;
+                width: 85%;
+                height: 60%;
             }
         }
     }

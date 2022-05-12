@@ -14,8 +14,8 @@
 </head>
 
 <body>
-      <!-- header start -->
-      <header id="header">
+    <!-- header start -->
+    <header id="header">
         <div class="myContainer">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="bars">
@@ -80,13 +80,13 @@
                                     <li><a href="completecourse.html">Free Type Course</a></li>
                                 </ul>
                             </li>
-                            <li class="homeli"><a class="homeA" href="#">Blog<i
+                            <li class="homeli"><a class="homeA aActiveHomeLiA" href="#">Blog<i
                                         class="fa-solid fa-angle-down dDown"></i></a>
                                 <ul class="home list-unstyled">
-                                    <li class="courseGrid"><a class="courseGridA" href="#">Blog Grid<i
+                                    <li class="courseGrid"><a class="courseGridA aActiveHomeLiA" href="#">Blog Grid<i
                                                 class="fa-solid fa-chevron-right rDown"></i></a>
                                         <ul class="course firstcourse list-unstyled">
-                                            <li><a href="column.html">2 Columns</a></li>
+                                            <li><a href="column.html" class="aActiveHomeLiA">2 Columns</a></li>
                                             <li><a href="#">2 Columns + SideBar</a></li>
                                             <li><a href="#">3 Columns</a></li>
                                             <li><a href="#">4 Columns Full Width</a></li>
@@ -141,7 +141,7 @@
         </div>
     </header>
     <!-- header end -->
-        <!-- -------------------------- -->
+    <!-- -------------------------- -->
     <section class="columnsec">
         <div class="textcolumn">
             <h2>2 Columns
@@ -174,7 +174,7 @@
                         <img class="img-fluid  "
                             src="https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2020/09/CO99-1170x725.jpeg"
                             alt="">
-                        <a href="https://youtu.be/VILyQq_81XY"><i class="fa-solid fa-play fapIcon"></i></a>
+                        <a href="#"><i class="fa-solid fa-play fapIcon"></i></a>
                         <div class="textHyman">
                             <span><a href="https://www.youtube.com/watch?v=VILyQq_81XY"><i class='bx bx-user'></i></a>
                                 Fred Hyman</span> <span><i class='bx bx-message-dots'></i>
@@ -285,27 +285,35 @@
             <i class="fa-solid fa-angle-right"></i>
         </div>
         </div>
+        <div class="secondVideo">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VILyQq_81XY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
     </section>
-        <!-- -------------------------- -->
+    <!-- -------------------------- -->
     <!-- footer start -->
     <footer id="footer">
         <div class="footBox">
             <div class="nav justify-content-between">
                 <div class="boxLeft">
                     <div class="logo">
-                        <img class="img-fluid" src="https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2021/12/2x_logo.png" alt="">
+                        <img class="img-fluid"
+                            src="https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2021/12/2x_logo.png"
+                            alt="">
                     </div>
                     <span>We support programs that create advancement for people</span>
                     <div class="icons">
                         <i class='bx bxl-facebook-circle'></i>
-                        <i class='bx bxl-twitter' ></i>
-                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxl-twitter'></i>
+                        <i class='bx bxl-instagram'></i>
 
                     </div>
                 </div>
                 <div class="boxMid">
                     <ul class="list-unstyled m-0 p-0 ">
-                        <li><a href="#"><h5>Useful links</h5></a></li>
+                        <li><a href="#">
+                                <h5>Useful links</h5>
+                            </a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms & condition</a></li>
@@ -314,7 +322,9 @@
                 </div>
                 <div class="boxMid">
                     <ul class="list-unstyled m-0 p-0 ">
-                        <li><a href="#"><h5>Learning</h5></a></li>
+                        <li><a href="#">
+                                <h5>Learning</h5>
+                            </a></li>
                         <li><a href="#">Business Strategy</a></li>
                         <li><a href="#">Become A Teacher</a></li>
                         <li><a href="#">Project Management</a></li>
@@ -325,18 +335,20 @@
                     <h5>Contact Us</h5>
                     <a href="#"> <i class='bx bx-phone-call'></i> +91 458 654 528</a>
                     <a href="#"> <i class='bx bx-envelope-open'></i> info@example.com</a>
-                    <a href="#"> <i class="fa-solid fa-location-dot"></i> PO Box 16122 Collins Street West Victoria 8007 Australia</a>
-                    
+                    <a href="#"> <i class="fa-solid fa-location-dot"></i> PO Box 16122 Collins Street West Victoria 8007
+                        Australia</a>
+
                 </div>
             </div>
             <div class="botFoot">
-            <div class="copyright">
-                <p>© Copyright 2022 Pixelcurve All rights reserved.</p>
-            </div>
+                <div class="copyright">
+                    <p>© Copyright 2022 Pixelcurve All rights reserved.</p>
+                </div>
             </div>
         </div>
     </footer>
     <!-- footer end -->
+
     <script src="js/main.js"></script>
 </body>
 

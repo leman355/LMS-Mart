@@ -5,6 +5,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 .myContainer {
   width: 80%;
   margin: auto;
@@ -18,6 +20,17 @@ a {
   z-index: 100;
   background-color: white;
   font-family: Heebo;
+}
+
+#header.nav-down {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#header.nav-up {
+  top: -50px;
 }
 
 #header.fixedToTop {
@@ -120,6 +133,14 @@ a {
 }
 
 #header .bigMenu .menu ul .homeli a:hover i {
+  color: #3BBCA7;
+}
+
+#header .bigMenu .menu ul .homeli a.aActiveHomeLiA {
+  color: #3BBCA7;
+}
+
+#header .bigMenu .menu ul .homeli a.aActiveHomeLiA i {
   color: #3BBCA7;
 }
 
@@ -2887,12 +2908,13 @@ a {
 .completeCourse .bigCourse .textBox .update h6 {
   display: inline;
   color: #141948;
+  font-weight: bold;
 }
 
 .completeCourse .bigCourse .textBox .update span {
-  font-size: 13px;
+  font-size: 15px;
   color: #3BBCA7;
-  font-weight: 300;
+  font-weight: bold;
 }
 
 .overview {
@@ -2961,16 +2983,7 @@ a {
 
 .overview .allView .leftView .tabCont ul li.actiVeLi h5 {
   color: #141948;
-}
-
-.overview .allView .leftView .tabCont ul li.actiVeLi h5::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  background-color: #3BBCA7;
+  border-bottom: 3px solid #3BBCA7;
 }
 
 .overview .allView .leftView .tabBottom .tabBox {
@@ -3045,15 +3058,18 @@ a {
   position: relative;
 }
 
-.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion h5::after {
-  position: absolute;
-  content: "\02795";
-  right: 4%;
-  font-size: 13px;
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion h5 p {
+  margin: 0;
 }
 
-.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion h5.active::after {
-  content: "\2796";
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion h5 i {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion h5.active i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel {
@@ -3201,6 +3217,7 @@ a {
   height: 100%;
   background-color: #ffd24d;
 }
+
 .overview .allView .leftView .tabBottom .tabBox.reviews .rightReview .rates .mid .yelloww {
   width: 100%;
   height: 100%;
@@ -3464,6 +3481,21 @@ a {
   background-color: rgba(12, 12, 145, 0.768);
 }
 
+@media (max-width: 400px) {
+  .overview .videoPlay iframe {
+    height: 26%;
+  }
+}
+
+@media (max-width: 576px) {
+  .overview .videoPlay iframe {
+    top: 35%;
+    left: 7%;
+    width: 85%;
+    height: 36%;
+  }
+}
+
 @media (max-width: 768px) {
   .completeCourse .bigCourse .textBox {
     width: 90%;
@@ -3484,6 +3516,12 @@ a {
   }
   .completeCourse .bigCourse .textBox .update h6 {
     font-size: 12px;
+  }
+  .overview .videoPlay iframe {
+    top: 35%;
+    left: 7%;
+    width: 85%;
+    height: 50%;
   }
   .allView .leftView {
     overflow: hidden;
@@ -3538,380 +3576,14 @@ a {
   .completeCourse .bigCourse .textBox .update h6 {
     font-size: 12px;
   }
+  .overview .videoPlay iframe {
+    top: 35%;
+    left: 7%;
+    width: 85%;
+    height: 60%;
+  }
   .overview .allView .rightView {
     margin-top: 2rem;
-  }
-}
-.elementor {
-  background-image: url(https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2022/01/TOIP036.jpeg);
-  background-size: cover;
-  width: 100%;
-  height: 430px;
-  padding: 30px;
-}
-
-.elementor .textelement {
-  padding: 0 25px;
-}
-
-.elementor .textelement p {
-  font-size: 18px;
-  color: #666666;
-}
-
-.elementor .textelement .staricon {
-  padding: 20px 0;
-}
-
-.elementor .textelement .staricon i {
-  font-size: 15px;
-  color: #ffb60a;
-}
-
-.elementor .textelement h1 {
-  font-weight: bold;
-  color: #141948;
-  font-size: 36px;
-  padding-bottom: 15px;
-}
-
-.elementor .devkoss {
-  padding-top: 20px;
-}
-
-.elementor .devkoss img {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  margin-left: 10px;
-}
-
-.elementor span {
-  font-size: 15px;
-  padding: 0 10px;
-}
-
-.elementor span.boldst {
-  font-weight: 600;
-}
-
-.elementor span.devon {
-  border-right: 1px solid #aeaeae;
-}
-
-.elementor span.greenUp {
-  color: #3BBCA7;
-}
-
-.thtorial .alltutorial .leftorial {
-  padding: 20px 0;
-}
-
-.thtorial .alltutorial .leftorial ul {
-  padding-bottom: 20px;
-  border-bottom: 3px solid #f6f7f9;
-}
-
-.thtorial .alltutorial .leftorial ul li {
-  margin-left: 40px;
-  cursor: pointer;
-  padding-bottom: 10px;
-}
-
-.thtorial .alltutorial .leftorial ul li h4 {
-  color: #ababab;
-  font-size: 20px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.thtorial .alltutorial .leftorial .tbover {
-  display: none;
-}
-
-.thtorial .alltutorial .leftorial .tbover.active {
-  display: block;
-}
-
-.thtorial .alltutorial .leftorial .overbox .overTopp {
-  margin: 30px;
-}
-
-.thtorial .alltutorial .leftorial .overbox .overTopp p {
-  color: #6E6F6F;
-  font-size: 17px;
-}
-
-.thtorial .alltutorial .leftorial .overbox .overbottomm {
-  margin-top: 30px;
-  background-color: #f6f7f9;
-  padding: 20px;
-}
-
-.thtorial .alltutorial .leftorial .overbox .overbottomm h3 {
-  font-weight: bold;
-  color: #141948;
-  font-size: 24px;
-  padding: 20px 0;
-}
-
-.thtorial .alltutorial .leftorial .overbox .overbottomm ul li {
-  line-height: 25px;
-  color: #6E6F6F;
-}
-
-.thtorial .alltutorial .leftorial .overbox .overbottomm ul li i {
-  font-weight: 700;
-  font-size: 13px;
-}
-
-.thtorial .alltutorial .leftorial .overbox .overbottomm ul li span.checkText {
-  padding-left: 30px;
-}
-
-.thtorial .alltutorial .leftorial .curbox .accmenu {
-  margin: 40px 0;
-  border: 1px solid rgba(144, 142, 142, 0.184);
-}
-
-.thtorial .alltutorial .leftorial .curbox .accmenu h5 {
-  padding: 20px;
-  font-size: 17px;
-  color: #141948;
-  font-weight: bold;
-}
-
-.thtorial .alltutorial .leftorial .insbox {
-  padding-top: 30px;
-}
-
-.thtorial .alltutorial .leftorial .insbox h4 {
-  color: #072F60;
-  font-weight: 600;
-}
-
-.thtorial .alltutorial .leftorial .insbox img {
-  border-radius: 50%;
-}
-
-.thtorial .alltutorial .leftorial .insbox p {
-  color: #666666;
-  font-size: 15px;
-}
-
-.thtorial .alltutorial .leftorial .insbox i {
-  margin: 20px 5px;
-  text-align: center;
-  border: 1px solid #eaeaea;
-  color: #6E6F6F;
-  border-radius: 50%;
-  padding: 5px 7px;
-}
-
-.thtorial .alltutorial .leftorial .revbox {
-  margin-top: 20px;
-}
-
-.thtorial .alltutorial .leftorial .revbox .ttal {
-  text-align: center;
-  -webkit-box-shadow: 5px 0px 15px 0px #aeaeae;
-          box-shadow: 5px 0px 15px 0px #aeaeae;
-  padding: 20px 0;
-}
-
-.thtorial .alltutorial .leftorial .revbox .ttal h2 {
-  color: #072F60;
-  font-size: 60px;
-  font-weight: 600;
-}
-
-.thtorial .alltutorial .leftorial .revbox .ttal .staricon {
-  padding: 20px 0;
-}
-
-.thtorial .alltutorial .leftorial .revbox .ttal .staricon i {
-  font-size: 20px;
-  color: #ffb60a;
-}
-
-.thtorial .alltutorial .leftorial .revbox .ttal span {
-  color: #6E6F6F;
-}
-
-.thtorial .alltutorial .leftorial .revbox .ttel i {
-  color: #ffb60a;
-}
-
-.thtorial .alltutorial .leftorial .revbox .ttel .vbox {
-  margin: 20px 0;
-}
-
-.thtorial .alltutorial .leftorial .revbox .ttel .vbox .mdn {
-  margin-top: 8px;
-  height: 8px;
-  background-color: rgba(144, 142, 142, 0.184);
-}
-
-.thtorial .alltutorial .leftorial .revbox .ttel .vbox .mdn .wcolor1 {
-  width: 100%;
-  height: 100%;
-  background-color: #ffb60a;
-}
-
-.thtorial .alltutorial .leftorial .revbox .ttel .vbox .mdn .wcolor2 {
-  width: 0%;
-  height: 100%;
-  background-color: #ffb60a;
-}
-
-.thtorial .alltutorial .leftorial .revbox .ttel .vbox .right {
-  color: #ababab;
-}
-
-.thtorial .alltutorial .leftorial .revbox .revcom {
-  margin: 40px 0;
-}
-
-.thtorial .alltutorial .leftorial .revbox .revcom h3 {
-  color: #072F60;
-  font-weight: 600;
-}
-
-.thtorial .alltutorial .leftorial .revbox .revcom .rowbox {
-  margin: 40px 0;
-  padding-top: 40px;
-  border-bottom: 1px solid #eaeaea;
-}
-
-.thtorial .alltutorial .leftorial .revbox .revcom .rowbox img {
-  border-radius: 50%;
-}
-
-.thtorial .alltutorial .leftorial .revbox .revcom .rowbox h4 {
-  color: #072F60;
-  font-weight: 600;
-}
-
-.thtorial .alltutorial .leftorial .revbox .revcom .rowbox i {
-  font-size: 15px;
-  color: #ffb60a;
-}
-
-.thtorial .alltutorial .leftorial .revbox .revcom .rowbox p {
-  padding: 20px 0;
-}
-
-.thtorial .alltutorial .leftorial .revbox .revcom .rowbox span {
-  color: #072F60;
-  font-weight: 600;
-}
-
-.thtorial .alltutorial .rightorial {
-  -webkit-transform: translateY(-90px);
-          transform: translateY(-90px);
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  -webkit-box-shadow: 5px 0px 15px 0px #aeaeae;
-          box-shadow: 5px 0px 15px 0px #aeaeae;
-  padding-bottom: 20px;
-  border-radius: 5px;
-}
-
-.thtorial .alltutorial .rightorial .clivideo {
-  position: relative;
-}
-
-.thtorial .alltutorial .rightorial .clivideo img {
-  border-radius: 5px;
-}
-
-.thtorial .alltutorial .rightorial .clivideo i {
-  position: absolute;
-  bottom: 30%;
-  right: 45%;
-  background-color: white;
-  border-radius: 50%;
-  padding: 20px 22px;
-  font-size: 20px;
-  z-index: 1;
-  color: #072F60;
-}
-
-.thtorial .alltutorial .rightorial .clivideo i:hover {
-  color: #3BBCA7;
-}
-
-.thtorial .alltutorial .rightorial p {
-  color: #072F60;
-  font-size: 30px;
-  font-weight: 650;
-  margin: 10px 30px;
-  padding: 20px 0;
-}
-
-.thtorial .alltutorial .rightorial span {
-  display: block;
-}
-
-.thtorial .alltutorial .rightorial .vieWcart {
-  background-color: #3BBCA7;
-  color: white;
-  width: 80%;
-  padding: 10px;
-  margin: 30px auto;
-  font-weight: 600;
-  border-radius: 3px;
-  text-align: center;
-}
-
-.thtorial .alltutorial .rightorial .duration {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 10px 0;
-}
-
-.thtorial .alltutorial .rightorial .duration i {
-  margin-right: 5px;
-  font-size: 18px;
-}
-
-.thtorial .alltutorial .rightorial hr {
-  margin: auto;
-  height: 2px;
-  width: 65%;
-  color: #ebebeb;
-}
-
-.thtorial .alltutorial .rightorial .shareThis {
-  margin: 20px 40px;
-  color: #3BBCA7;
-  border: 2px solid #3BBCA7;
-  padding: 10px;
-  border-radius: 5px;
-  width: 75%;
-  background-color: white;
-}
-
-@media (max-width: 768px) {
-  .elementor h1 {
-    font-size: 20px;
-    font-weight: 500;
-  }
-  .elementor p {
-    font-size: 12px;
-  }
-  .rightorial {
-    margin-top: 70px;
-    margin-left: 18px;
   }
 }
 
@@ -3939,11 +3611,8 @@ a {
   color: #141948;
   font-size: 45px;
   font-weight: bold;
+  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-}
-
-.columnsec .textcolumn h2:hover {
-  color: #3BBCA7;
 }
 
 .columnsec .textcolumn span {
@@ -3960,6 +3629,41 @@ a {
 
 .stylecol {
   margin-top: 40px;
+}
+
+.stylecol .secondVideo {
+  position: fixed;
+  top: 0%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.stylecol .secondVideo.secondActiveVideo {
+  opacity: 1;
+  visibility: visible;
+}
+
+.stylecol .secondVideo iframe {
+  position: fixed;
+  top: 10%;
+  left: 12%;
+  width: 1200px;
+  height: 650px;
+}
+
+.stylecol .secondVideo i {
+  position: absolute;
+  font-size: 30px;
+  top: 1%;
+  right: 1%;
+  color: white;
 }
 
 .stylecol .fredHyman {
@@ -3979,7 +3683,7 @@ a {
 }
 
 .stylecol .fredHyman .textHyman h3 {
-  color: #072F60;
+  color: #072f60;
   font-weight: 700;
   font-size: 25px;
   padding: 10px 0;
@@ -4018,16 +3722,21 @@ a {
 }
 
 .stylecol .fredHymanplay .fapIcon {
-  -webkit-transform: translateX();
-          transform: translateX();
   position: absolute;
   bottom: 65%;
   right: 45%;
-  color: #072F60;
+  color: #072f60;
   background-color: white;
   border-radius: 50%;
   padding: 20px 22px;
   font-size: 20px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.stylecol .fredHymanplay .fapIcon:hover {
+  background-color: #3BBCA7;
+  color: white;
 }
 
 .stylecol .fredHymanplay .textHyman {
@@ -4035,7 +3744,7 @@ a {
 }
 
 .stylecol .fredHymanplay .textHyman h3 {
-  color: #072F60;
+  color: #072f60;
   font-weight: 700;
   font-size: 25px;
   padding: 10px 0;
@@ -4055,7 +3764,7 @@ a {
 }
 
 .stylecol .fredHymanplay .textHyman span.readmore {
-  color: #3BBCA7;
+  color: #3bbca7;
   font-weight: bold;
   font-size: 12px;
 }
@@ -4088,6 +3797,39 @@ a {
   color: white;
   border-radius: 100%;
   padding: 8px 15px;
+}
+
+@media (max-width: 576px) {
+  .stylecol .secondVideo iframe {
+    top: 35%;
+    left: 7%;
+    width: 85%;
+    height: 36%;
+  }
+}
+
+@media (max-width: 400px) {
+  .stylecol .secondVideo iframe {
+    height: 26%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .stylecol .secondVideo iframe {
+    top: 35%;
+    left: 7%;
+    width: 85%;
+    height: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .stylecol .secondVideo iframe {
+    top: 35%;
+    left: 7%;
+    width: 85%;
+    height: 60%;
+  }
 }
 
 .atUniver {
@@ -4139,7 +3881,7 @@ a {
 }
 
 .worldClass .nationAl blockquote p {
-  color: #072F60;
+  color: #072f60;
   font-size: 23px;
   font-weight: 600;
 }
@@ -4155,7 +3897,7 @@ a {
 
 .worldClass .nationAl h5 {
   margin-top: 20px;
-  color: #072F60;
+  color: #072f60;
   font-size: 23px;
   font-weight: 600;
 }
@@ -4249,7 +3991,7 @@ a {
 
 .tagsBalance .buildCar {
   margin-top: 40px;
-  background-color: #F6F7F9;
+  background-color: #f6f7f9;
   padding: 20px 10px;
 }
 
@@ -4258,7 +4000,7 @@ a {
 }
 
 .tagsBalance .buildCar .textscinec h6 {
-  color: #072F60;
+  color: #072f60;
   font-weight: 600;
 }
 
@@ -4275,7 +4017,7 @@ a {
 
 .tagsBalance .relatedposts h3 {
   font-weight: 600;
-  color: #072F60;
+  color: #072f60;
   font-size: 20px;
   padding: 5px 0;
 }
@@ -4333,7 +4075,7 @@ a {
 }
 
 .tagsBalance .leftTags span.ttags {
-  color: #072F60;
+  color: #072f60;
   font-weight: 700;
   font-size: 15px;
   background: none;
@@ -4348,19 +4090,19 @@ a {
 }
 
 .tagsBalance .leftTags .soctag span.twit {
-  background-color: #1DA1F2;
+  background-color: #1da1f2;
 }
 
 .tagsBalance .leftTags .soctag span.fbook {
-  background-color: #4E69A2;
+  background-color: #4e69a2;
 }
 
 .tagsBalance .leftTags .soctag span.pints {
-  background-color: #C32032;
+  background-color: #c32032;
 }
 
 .tagsBalance .leftTags .soctag span.linked {
-  background-color: #1988BC;
+  background-color: #1988bc;
 }
 
 .tagsBalance .comments02 {
@@ -4368,7 +4110,7 @@ a {
 }
 
 .tagsBalance .comments02 h2 {
-  color: #072F60;
+  color: #072f60;
   font-weight: 700;
 }
 
@@ -4382,7 +4124,7 @@ a {
 }
 
 .tagsBalance .comments02 .combox h5 {
-  color: #072F60;
+  color: #072f60;
   font-weight: 600;
   padding: 5px 0;
 }
@@ -4436,7 +4178,7 @@ a {
 }
 
 .tagsBalance .comments02 .rightAlltags span.ttags {
-  color: #072F60;
+  color: #072f60;
   font-weight: 700;
   font-size: 15px;
   background: none;
@@ -4445,7 +4187,7 @@ a {
 .tagsBalance .comments02 .rightAlltags .whStay {
   margin-top: 20px;
   text-align: center;
-  background-color: #EAF3F8;
+  background-color: #eaf3f8;
 }
 
 .tagsBalance .comments02 .rightAlltags .whStay .textWh {
@@ -4475,7 +4217,7 @@ a {
 }
 
 .tagsBalance .leavrep h3 {
-  color: #072F60;
+  color: #072f60;
   font-weight: 650;
 }
 
@@ -4494,7 +4236,7 @@ a {
 }
 
 .tagsBalance .leavrep input.past:hover {
-  background-color: #072F60;
+  background-color: #072f60;
 }
 
 .tagsBalance .leavrep input::-webkit-input-placeholder {
@@ -4542,7 +4284,7 @@ a {
 }
 
 .tagsBalance .rightAlltags span.ttags {
-  color: #072F60;
+  color: #072f60;
   font-weight: 700;
   font-size: 15px;
   background: none;
@@ -4551,7 +4293,7 @@ a {
 .tagsBalance .rightAlltags .whStay {
   margin-top: 20px;
   text-align: center;
-  background-color: #EAF3F8;
+  background-color: #eaf3f8;
 }
 
 .tagsBalance .rightAlltags .whStay .textWh {

@@ -12,7 +12,16 @@ a {
     z-index: 100;
     background-color: $white;
     font-family: Heebo;
-    &.fixedToTop{
+    &.nav-down {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    &.nav-up {
+        top: -50px;
+    }
+    &.fixedToTop {
         position: fixed;
         top: 0;
         left: 0;
@@ -54,96 +63,103 @@ a {
             display: none;
         }
     }
-    .bigMenu{
+    .bigMenu {
         .resX {
             display: none;
         }
         width: 40%;
-    .menu {
-        width: 100%;
-        ul {
-            margin-bottom: 0;
-            .resLogo {
-                display: none;
-            }
-            .homeli {
-                padding: 30px 20px;
-                position: relative;
-                a {
-                    padding: 30px 0;
-                    transition: 0.3s ease-in-out;
-                    color: $darkblue;
-                    font-weight: bold;
-                    i {
+        .menu {
+            width: 100%;
+            ul {
+                margin-bottom: 0;
+                .resLogo {
+                    display: none;
+                }
+                .homeli {
+                    padding: 30px 20px;
+                    position: relative;
+                    a {
+                        padding: 30px 0;
                         transition: 0.3s ease-in-out;
-                        margin-left: 10px;
-                        font-size: 12px;
-                        color: $gray;
+                        color: $darkblue;
+                        font-weight: bold;
+                        i {
+                            transition: 0.3s ease-in-out;
+                            margin-left: 10px;
+                            font-size: 12px;
+                            color: $gray;
+                        }
+                        &:hover {
+                            color: $aqua;
+                            i {
+                                color: $aqua;
+                            }
+                        }
+                        &.aActiveHomeLiA {
+                            color: $aqua;
+                            i {
+                                color: $aqua;
+                            }
+                        }
                     }
                     &:hover {
-                        color: $aqua;
-                        i {
-                            color: $aqua;
+                        .home {
+                            transform: translateY(20px);
+                            opacity: 1;
+                            visibility: visible;
                         }
                     }
-                }
-                &:hover {
                     .home {
-                        transform: translateY(20px);
-                        opacity: 1;
-                        visibility: visible;
-                    }
-                }
-                .home {
-                    transition: 0.5s ease-in-out;
-                    position: absolute;
-                    transform: translateY(30px);
-                    background-color: $white;
-                    width: 270px;
-                    padding: 20px 0px;
-                    border-radius: 2mm;
-                    border-top: 3px solid $aqua;
-                    opacity: 0;
-                    visibility: hidden;
-                    &.lastHome {
-                        right: 0%;
-                    }
-                    li{
-                        padding: 10px 30px;
-                        a {
-                            padding: 0;
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
+                        transition: 0.5s ease-in-out;
+                        position: absolute;
+                        transform: translateY(30px);
+                        background-color: $white;
+                        width: 270px;
+                        padding: 20px 0px;
+                        border-radius: 2mm;
+                        border-top: 3px solid $aqua;
+                        opacity: 0;
+                        visibility: hidden;
+                        &.lastHome {
+                            right: 0%;
                         }
-                    }
-                    .courseGrid {
-                        position: relative;
-                        &:hover {
+                        li {
+                            padding: 10px 30px;
+                            a {
+                                padding: 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+                        }
+                        .courseGrid {
+                            position: relative;
+                            &:hover {
+                                .course {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    transform: translateY(0px);
+                                    top: -50%;
+                                }
+                            }
                             .course {
-                                opacity: 1;
-                                visibility: visible;
-                                transform: translateY(0px);
-                                top: -50%;
-                            }
-                        }
-                        .course {
-                            transition: 0.5s ease-in-out;
-                            position: absolute;
-                            top: 0%;
-                            transform: translateY(30px);
-                            background-color: $white;
-                            width: 270px;
-                            padding: 20px 25px;
-                            border-radius: 2mm;
-                            border-top: 3px solid $aqua;
-                            opacity: 0;
-                            visibility: hidden;
-                            &.firstcourse {
-                                left: 100%;
-                            }
-                            &.lastcourse {
-                                right: 100%;
+                                transition: 0.5s ease-in-out;
+                                position: absolute;
+                                top: 0%;
+                                transform: translateY(30px);
+                                background-color: $white;
+                                width: 270px;
+                                padding: 20px 25px;
+                                border-radius: 2mm;
+                                border-top: 3px solid $aqua;
+                                opacity: 0;
+                                visibility: hidden;
+                                &.firstcourse {
+                                    left: 100%;
+                                }
+                                &.lastcourse {
+                                    right: 100%;
+                                }
                             }
                         }
                     }
@@ -151,7 +167,6 @@ a {
             }
         }
     }
-}
     .right {
         input {
             &::placeholder {
@@ -409,7 +424,7 @@ a {
         .bigMenu {
             width: 80%;
             .menu {
-            width: 100%;
+                width: 100%;
                 ul {
                     .homeli {
                         .home {
